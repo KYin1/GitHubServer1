@@ -357,8 +357,7 @@ FOR i := 0 TO 5 DO
 		jointPosTarget[i, j] := (1.0 - pivot) * jntPosBegin[i, j] + pivot * jntPosEnd[i, j];
 		gvl.jntRefPosLastPlanning[i,j]:=jointPosTarget[i, j] ;
 		jointVelTarget[i, j] := - pivotDot * jntPosBegin[i, j] + pivotDot * jntPosEnd[i, j];
-		//jointFceTarget[i, j] := jntTrqDesire[i,j];
-		jointFceTarget[i, j] := 0;
+		jointFceTarget[i, j] := jntTrqDesire[i,j];
 	END_FOR
 END_FOR
 	
@@ -496,9 +495,7 @@ END_IF
       <LineId Id="433" Count="0" />
       <LineId Id="155" Count="2" />
       <LineId Id="195" Count="0" />
-      <LineId Id="158" Count="1" />
-      <LineId Id="856" Count="0" />
-      <LineId Id="160" Count="5" />
+      <LineId Id="158" Count="7" />
       <LineId Id="945" Count="3" />
       <LineId Id="138" Count="14" />
       <LineId Id="30" Count="0" />

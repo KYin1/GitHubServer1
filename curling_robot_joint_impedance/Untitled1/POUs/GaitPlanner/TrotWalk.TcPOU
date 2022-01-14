@@ -691,6 +691,10 @@ VAR
 													 0,0,0,
 													 0,-145,0];
 	tr: LREAL;
+	
+	tempTipForce:ARRAY [0..2] OF LREAL;
+	temJntActPos:ARRAY [0..2] OF LREAL;
+	tempDesJntTrq:ARRAY [0..2] OF LREAL;
 END_VAR]]></Declaration>
       <Implementation>
         <ST><![CDATA[gait_cycle := gait_cycle + 1;
@@ -747,24 +751,23 @@ FOR k:=0 TO 1 DO
 			StanceTrj_tn[i]:=FixTrj_tn[i]*period[k]*duty[k];
 		END_FOR
 		FOR i:=0 TO 2 DO
-			(*//force compensator
+			//force compensator
 			IF k=0 THEN
 				tipForceTarget:=tipForceDesireLegA;
 			ELSE
 				tipForceTarget:=tipForceDesireLegF;
 			END_IF
-			
 			IF gait_cycle-count_en_ST[k]>=0 AND  (gait_cycle-count_en_ST[k])<=fceLoadTime*gvl.sampleRate THEN
 				tr  := UDINT_TO_LREAL(gait_cycle-count_en_ST[k]) / gvl.sampleRate / fceLoadTime;
 				fbGetPivot(tNow := tr, tTotal := 1.0, pivot => pvt);
 				FOR j:=0 TO 2 DO
-					tipForceDesire[2*i+k,j]:=(1-pvt)*tipForceDesireZeros[i,j]+pvt*tipForceTarget[i,j];
+					tipForceDesire[2*i+k,j]:=(1-pvt)*tipForceDesireZeros[2*i+k,j]+pvt*tipForceTarget[2*i+k,j];
 				END_FOR
 			ELSIF gait_cycle-count_en_ST[k]>=LREAL_TO_UDINT((period[k]*duty[k]-fceLoadTime)*gvl.sampleRate) AND gait_cycle-count_en_ST[k]<=LREAL_TO_UDINT(period[k]*duty[k]*gvl.sampleRate) THEN
 				FOR j:=0 TO 2 DO
-					tipForceDesire[2*i+k,j]:=(1-pvt)*tipForceTarget[i,j]+pvt*tipForceDesireZeros[i,j];
+					tipForceDesire[2*i+k,j]:=(1-pvt)*tipForceTarget[2*i+k,j]+pvt*tipForceDesireZeros[2*i+k,j];
 				END_FOR
-			END_IF *)
+			END_IF 
 
 			//trj planning in y direction (up/down)
 			start_height:=tip_pos_en_ST[2*i+k].data[1];
@@ -925,11 +928,23 @@ FOR i := 0 TO 5 DO
 		jointFceTarget[i, j] := 0;
 	END_FOR
 END_FOR
+
+
+
 IF isTrotWalk=TRUE THEN
+	
+	FOR i:=0 TO 5 DO
+		tempTipForce[0]:=tipForceDesire[i,0];tempTipForce[1]:=tipForceDesire[i,1];tempTipForce[2]:=tipForceDesire[i,2];
+		temJntActPos[0]:=gvl.jntActualPos[i,0];temJntActPos[1]:=gvl.jntActualPos[i,1];temJntActPos[2]:=gvl.jntActualPos[i,2];
+		gvl.legCtrl[i].DesireDriveForce(fTipDes:=tempTipForce , motorAng:=temJntActPos , legIndex:=i , fDrvDes=>tempDesJntTrq );
+		jntTrqDesire[i,0]:=tempDesJntTrq[0];jntTrqDesire[i,1]:=tempDesJntTrq[1];jntTrqDesire[i,2]:=tempDesJntTrq[2];
+	END_FOR
+
 	CalcAddfce();
 	FOR i := 0 TO 5 DO
 		FOR j := 0 TO 2 DO
-			jointFceTarget[i, j] := jntFce[i].data[j];
+			//jointFceTarget[i, j] := jntFce[i].data[j];//姿态稳定器
+			jointFceTarget[i, j] := jntFce[i].data[j]+jntTrqDesire[i,j];//姿态稳定器+静态补偿
 		END_FOR
 	END_FOR	
 END_IF
@@ -1265,7 +1280,6 @@ END_IF]]></ST>
       <LineId Id="493" Count="1" />
       <LineId Id="496" Count="1" />
       <LineId Id="495" Count="0" />
-      <LineId Id="492" Count="0" />
       <LineId Id="489" Count="0" />
       <LineId Id="498" Count="1" />
       <LineId Id="501" Count="6" />
@@ -1327,8 +1341,18 @@ END_IF]]></ST>
       <LineId Id="205" Count="1" />
       <LineId Id="203" Count="0" />
       <LineId Id="209" Count="59" />
-      <LineId Id="592" Count="1" />
-      <LineId Id="596" Count="3" />
+      <LineId Id="682" Count="0" />
+      <LineId Id="681" Count="0" />
+      <LineId Id="688" Count="0" />
+      <LineId Id="592" Count="0" />
+      <LineId Id="689" Count="0" />
+      <LineId Id="692" Count="4" />
+      <LineId Id="691" Count="0" />
+      <LineId Id="690" Count="0" />
+      <LineId Id="593" Count="0" />
+      <LineId Id="596" Count="1" />
+      <LineId Id="701" Count="0" />
+      <LineId Id="598" Count="1" />
       <LineId Id="595" Count="0" />
       <LineId Id="594" Count="0" />
       <LineId Id="636" Count="8" />
