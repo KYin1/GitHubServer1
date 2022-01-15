@@ -418,7 +418,7 @@ VAR_GLOBAL
 	//liftbody
 	RestButton:BOOL:=FALSE;
 	WorkButton:BOOL:=FALSE;
-	ReduceDistance:LREAL:=-0.25;
+	ReduceDistance:LREAL:=-0.15;
 	IsRest:BOOL:=FALSE;
 	IsRcCurling:BOOL:=FALSE;
 	IsPreLiftBody:BOOL:=FALSE;

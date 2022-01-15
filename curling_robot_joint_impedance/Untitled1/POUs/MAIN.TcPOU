@@ -260,11 +260,10 @@ END_IF
 IF gvl.RestButton=TRUE AND gvl.WorkButton=FALSE THEN
 	gvl.IsRest:=TRUE;
 	gvl.IsWork:=FALSE;
-	gvl.RcStartFlag:=TRUE;
-	gvl.RcEndFlag:=FALSE;
-	gvl.RestButton:=FALSE;
-	gvl.RcEndFlagLast:=FALSE;
+	gvl.LiftBodyStartFlag:=TRUE;
+	gvl.LiftBodyEndFlag:=FALSE;
 	gvl.LiftBodyEndFlagLast:=FALSE;
+	gvl.RestButton:=FALSE;
 END_IF
 IF gvl.RestButton=FALSE AND gvl.WorkButton=TRUE THEN
 	gvl.IsWork:=TRUE;
@@ -276,56 +275,28 @@ IF gvl.RestButton=FALSE AND gvl.WorkButton=TRUE THEN
 END_IF
 
 IF gvl.IsRest=TRUE THEN
-	IF gvl.RcStartFlag=TRUE THEN
-		gvl.gaitId:=0;
-		gvl.RcGaitId:=1;
-		gvl.IsRcCurling:=TRUE;
-		GVL.startGaitButton:=TRUE;
-		gvl.RcStartFlag:=FALSE;
-		gvl.RcEndFlag:=FALSE;
-	END_IF
-	IF gvl.IsRcCurling=TRUE AND GVL.isInGaitMode=TRUE THEN
-		gvl.RcEndFlag:= gvl.isFinished;
-	END_IF
-	IF gvl.RcEndFlagLast=FALSE AND gvl.RcEndFlag=TRUE AND gvl.IsRcCurling=TRUE  THEN
-		gvl.EnterPreLiftBodyCount:=count;
-		gvl.IsRcCurling:=FALSE;
-		gvl.IsPreLiftBody:=TRUE;
-		gvl.LiftBodyStartFlag:=FALSE;
-	END_IF
-
-	IF gvl.IsPreLiftBody=TRUE AND count-gvl.EnterPreLiftBodyCount=LREAL_TO_UDINT(0.2*gvl.sampleRate) AND gvl.LiftBodyStartFlag=FALSE THEN
-		gvl.LiftBodyStartFlag:=TRUE;
-		gvl.IsPreLiftBody:=FALSE;
-	END_IF
 	IF gvl.LiftBodyStartFlag=TRUE THEN
+		gvl.LiftBodyStartFlag:=FALSE;
 		gvl.gaitId:=2;
 		gvl.IsLiftBody:=TRUE;
 		IF gvl.ReduceDistance>0 THEN
 			gvl.ReduceDistance:=-gvl.ReduceDistance;
 		END_IF
-		IF ABS(gvl.ReduceDistance)>=0.25 THEN
-			gvl.ReduceDistance:=-0.25;
-		END_IF
-		
+		IF ABS(gvl.ReduceDistance)>=0.15 THEN
+			gvl.ReduceDistance:=-0.15;
+		END_IF 
 		GVL.startGaitButton:=TRUE;
 		gvl.LiftBodyStartFlag:=FALSE;
 		gvl.LiftBodyEndFlag:=FALSE;
 	END_IF
-	
-	IF gvl.IsLiftBody=TRUE AND GVL.isInGaitMode=TRUE THEN
+	IF gvl.IsLiftBody:=TRUE AND GVL.isInGaitMode=TRUE THEN
 		gvl.LiftBodyEndFlag:= gvl.isFinished;
 	END_IF	
-
 	IF gvl.LiftBodyEndFlagLast=FALSE AND gvl.LiftBodyEndFlag=TRUE AND gvl.IsLiftBody=TRUE THEN
 		gvl.IsLiftBody:=FALSE;
-		
 		gvl.IsRest:=FALSE;
-	END_IF	
-
-	
-	gvl.RcEndFlagLast:=gvl.RcEndFlag;
-	gvl.LiftBodyEndFlagLast:=gvl.LiftBodyEndFlag;
+	END_IF
+	gvl.LiftBodyEndFlagLast:=gvl.LiftBodyEndFlag;	
 END_IF
 
 IF gvl.IsWork=TRUE THEN
@@ -336,25 +307,20 @@ IF gvl.IsWork=TRUE THEN
 		IF gvl.ReduceDistance<0 THEN
 			gvl.ReduceDistance:=-gvl.ReduceDistance;
 		END_IF
-		IF ABS(gvl.ReduceDistance)>=0.25 THEN
-			gvl.ReduceDistance:=0.25;
+		IF ABS(gvl.ReduceDistance)>=0.15 THEN
+			gvl.ReduceDistance:=0.15;
 		END_IF 
 		GVL.startGaitButton:=TRUE;
 		gvl.LiftBodyStartFlag:=FALSE;
 		gvl.LiftBodyEndFlag:=FALSE;
 	END_IF
-	
 	IF gvl.IsLiftBody:=TRUE AND GVL.isInGaitMode=TRUE THEN
 		gvl.LiftBodyEndFlag:= gvl.isFinished;
 	END_IF	
-	
-	IF gvl.LiftBodyEndFlagLast=FALSE AND gvl.LiftBodyEndFlag=TRUE AND gvl.IsLiftBody=true THEN
+	IF gvl.LiftBodyEndFlagLast=FALSE AND gvl.LiftBodyEndFlag=TRUE AND gvl.IsLiftBody=TRUE THEN
 		gvl.IsLiftBody:=FALSE;
-		
 		gvl.IsWork:=FALSE;
 	END_IF
-	
-
 	gvl.LiftBodyEndFlagLast:=gvl.LiftBodyEndFlag;	
 END_IF
 
@@ -369,7 +335,17 @@ END_IF
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
-      <LineId Id="410" Count="354" />
+      <LineId Id="410" Count="248" />
+      <LineId Id="774" Count="2" />
+      <LineId Id="773" Count="0" />
+      <LineId Id="664" Count="9" />
+      <LineId Id="852" Count="19" />
+      <LineId Id="873" Count="2" />
+      <LineId Id="725" Count="16" />
+      <LineId Id="743" Count="2" />
+      <LineId Id="747" Count="1" />
+      <LineId Id="750" Count="1" />
+      <LineId Id="754" Count="10" />
       <LineId Id="66" Count="0" />
     </LineIds>
   </POU>

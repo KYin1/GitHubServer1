@@ -364,10 +364,6 @@ END_FOR
 // exit condition
 IF count >= (2*tExtend + 2*tRetract + 2*tWait) * gvl.sampleRate + 3 THEN
 	isFinished := TRUE;
-	
-	IF gvl.IsRest=TRUE THEN
-		gvl.RcEndFlag:=TRUE;
-	END_IF
 END_IF
 
 
@@ -496,7 +492,6 @@ END_IF
       <LineId Id="155" Count="2" />
       <LineId Id="195" Count="0" />
       <LineId Id="158" Count="7" />
-      <LineId Id="945" Count="3" />
       <LineId Id="138" Count="14" />
       <LineId Id="30" Count="0" />
     </LineIds>

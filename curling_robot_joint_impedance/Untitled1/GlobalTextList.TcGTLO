@@ -66,6 +66,16 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"12"</v>
+              <v n="TextDefault">"AddHeightFrWalk"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2481"</v>
+              <v n="TextDefault">"AddHFrWalk"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"1401"</v>
               <v n="TextDefault">"adjust_angle (。)"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -771,6 +781,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"1637"</v>
+              <v n="TextDefault">"ReduceHeightB"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"504"</v>
               <v n="TextDefault">"ref ang initialization"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -823,6 +838,11 @@
             <o>
               <v n="TextID">"379"</v>
               <v n="TextDefault">"Req AH"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"874"</v>
+              <v n="TextDefault">"Req AHFW"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -908,6 +928,11 @@
             <o>
               <v n="TextID">"1238"</v>
               <v n="TextDefault">"Req RH"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2068"</v>
+              <v n="TextDefault">"Req RHB"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

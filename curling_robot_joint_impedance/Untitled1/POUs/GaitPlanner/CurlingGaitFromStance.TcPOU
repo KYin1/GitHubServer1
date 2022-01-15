@@ -98,32 +98,35 @@ VAR
 	//state machine 
 	state:UINT;
 	Ready:UINT:=1;//init state
-	BlegCenter:UINT:=2; 
-	MlegRollA:UINT:=3;
-	FlegRotA:UINT:=4;
-	ReduceHeight:UINT:=5;
-	BodyPosAdjust:UINT:=6;
-	BLegPosAdjust:UINT:=7;
-	SearchPedal:UINT:=8;
-	ArmControl:UINT:=9;
-	OrientAdjust:UINT:=10;
-	MlegRollB:UINT:=11;
-	StoneRot:UINT:=12;
-	LiftMleg:UINT:=13;
-	SpeedUp:UINT:=14;
-	Slide:UINT:=15;
-	PushReleaseBall:UINT:=16;
-	SpeedDown:UINT:=17;
-	BLegRecovery:UINT:=18;
-	MlegRollC:UINT:=19;
-	AddHeight:UINT:=20;
-	FlegRotB:UINT:=21;
-	Recovery:UINT:=22;
-	CurlingFinished:UINT:=23;
+	AddHeightFromWalk:UINT:=2;
+	BlegCenter:UINT:=3; 
+	MlegRollA:UINT:=4;
+	FlegRotA:UINT:=5;
+	ReduceHeight:UINT:=6;
+	BodyPosAdjust:UINT:=7;
+	BLegPosAdjust:UINT:=8;
+	SearchPedal:UINT:=9;
+	ArmControl:UINT:=10;
+	OrientAdjust:UINT:=11;
+	MlegRollB:UINT:=12;
+	StoneRot:UINT:=13;
+	LiftMleg:UINT:=14;
+	SpeedUp:UINT:=15;
+	Slide:UINT:=16;
+	PushReleaseBall:UINT:=17;
+	SpeedDown:UINT:=18;
+	BLegRecovery:UINT:=19;
+	MlegRollC:UINT:=20;
+	AddHeight:UINT:=21;
+	FlegRotB:UINT:=22;
+	Recovery:UINT:=23;
+	ReduceHeightB:UINT:=24;
+	CurlingFinished:UINT:=25;
 	
 	//contol button
-	RequireMlegRollA:BOOL:=FALSE;
+	RequireAddHeightFromWalk:BOOL:=FALSE;
 	RequireBlegCenter:BOOL:=FALSE;
+	RequireMlegRollA:BOOL:=FALSE;
 	RequireFlegRotA:BOOL:=FALSE;
 	RequireReduceHeight:BOOL:=FALSE;
 	RequireBodyPosAdjust:BOOL:=FALSE;
@@ -143,6 +146,7 @@ VAR
 	RequireAddHeight:BOOL:=FALSE;
 	RequireFlegRotB:BOOL:=FALSE;
 	RequireRecovery:BOOL:=FALSE;
+	RequireReduceHeightB:BOOL:=FALSE;
 	
 	RequireRepeateBlegCenter:BOOL:=FALSE;
 	RequireRepeateStoneRot:BOOL:=FALSE;
@@ -154,8 +158,9 @@ VAR
 
 	
 	IsReady:BOOL:=FALSE;
-	IsMlegRollA:BOOL:=FALSE;
+	IsAddHeightFromWalk:BOOL:=FALSE;
 	IsBlegCenter:BOOL:=FALSE;
+	IsMlegRollA:BOOL:=FALSE;
 	IsFlegRotA:BOOL:=FALSE;
 	IsReduceHeight:BOOL:=FALSE;
 	IsBodyPosAdjust:BOOL:=FALSE;
@@ -177,11 +182,13 @@ VAR
 	IsAddHeight:BOOL:=FALSE;
 	IsFlegRotB:BOOL:=FALSE;
 	IsRecovery:BOOL:=FALSE;
+	IsReduceHeightB:BOOL:=FALSE;
 	IsCurlingFinished:BOOL:=FALSE;
 
-	ReadyFinished:bool:=false;
-	MlegRollAFinished:BOOL:=FALSE;
+	ReadyFinished:BOOL:=FALSE;
+	AddHeightFromWalkFinished:BOOL:=FALSE;
 	BlegCenterFinished:BOOL:=FALSE;
+	MlegRollAFinished:BOOL:=FALSE;
 	FlegRotAFinished:BOOL:=FALSE;
 	ReduceHeightFinished:BOOL:=FALSE;
 	BodyPosAdjustFinished:BOOL:=FALSE;
@@ -204,9 +211,11 @@ VAR
 	FlegRotBFinished:BOOL:=FALSE;
 	CurlingGaitFinished: BOOL:=FALSE;
 	RecoveryFinished:BOOL:=FALSE;
+	ReduceHeightBFinished:BOOL:=FALSE;
 	
-	EnterMlegRollACount:UDINT;
+	EnterAddHeightFromWalkCount:UDINT;
 	EnterBlegCenterCount:UDINT;
+	EnterMlegRollACount:UDINT;
 	EnterFlegRotACount:UDINT;
 	EnterReduceHeightCount:UDINT;
 	EnterBodyPosAdjustCount:UDINT;
@@ -226,6 +235,12 @@ VAR
 	EnterAddHeightCount:UDINT;
 	EnterFlegRotBCount:UDINT;
 	EnterRecoveryCount:UDINT;
+	EnterReduceHeightBCount:UDINT;
+	
+	//AddHeightFromWalk
+	AHFW_distance:LREAL:=0.1491;
+	AHFW_time:LREAL:=2;
+	AHFW_body_target_pos: Vec3;	
 		
 	//BlegCenter
 	BlegCenter_BJntStart:ARRAY[0..1] OF vec3;
@@ -465,6 +480,11 @@ VAR
 	Rc_PosWrtHip:ARRAY[0..5] OF vec3;
 	FlegRotB_FJntState3:ARRAY[0..1,0..2] OF LREAL;
 	
+	//ReduceHeightB
+	RHB_distance:LREAL:=0.1491;
+	RHB_time:LREAL:=2;
+	RHB_body_target_pos: Vec3;
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -539,51 +559,54 @@ IF quit_flag THEN
 	quit_flag := FALSE;
 	AC_visual_start:=AC_visual_start;
 	
-	RequireMlegRollA:=FALSE;
-	RequireBlegCenter:=FALSE;
-	RequireFlegRotA:=FALSE;
-	RequireReduceHeight:=FALSE;	
-	RequireBodyPosAdjust:=FALSE;
-	RequireBLegPosAdjust:=FALSE;
-	RequireSearchPedal:=FALSE;
-	RequireArmControl:=FALSE;
-	RequireOrientAdjust:=FALSE;
-	RequireMlegRollB:=FALSE;	
-	RequireStoneRot:=FALSE;		
-	RequireLiftMleg:=FALSE;
-	RequireSpeedUp:=FALSE;
-	RequireSlide:=FALSE;
-	RequirePushReleaseBall:=FALSE;
-	RequireSpeedDown:=FALSE;
-	RequireBLegRecovery:=FALSE;
-	RequireMlegRollC:=FALSE;
-	RequireAddHeight:=FALSE;
-	RequireFlegRotB:=FALSE;
+RequireAddHeightFromWalk:=FALSE;
+RequireBlegCenter:=FALSE;
+RequireMlegRollA:=FALSE;
+RequireFlegRotA:=FALSE;
+RequireReduceHeight:=FALSE;	
+RequireBodyPosAdjust:=FALSE;
+RequireBLegPosAdjust:=FALSE;
+RequireSearchPedal:=FALSE;
+RequireArmControl:=FALSE;
+RequireOrientAdjust:=FALSE;
+RequireMlegRollB:=FALSE;	
+RequireStoneRot:=FALSE;		
+RequireLiftMleg:=FALSE;
+RequireSpeedUp:=FALSE;
+RequireSlide:=FALSE;
+RequirePushReleaseBall:=FALSE;
+RequireSpeedDown:=FALSE;
+RequireBLegRecovery:=FALSE;
+RequireMlegRollC:=FALSE;
+RequireAddHeight:=FALSE;
+RequireFlegRotB:=FALSE;
+RequireRecovery:=FALSE;
+RequireReduceHeightB:=FALSE;
 
-	MlegRollAFinished:=FALSE;
-	BlegCenterFinished:=FALSE;
-	FlegRotAFinished:=FALSE;
-	ReduceHeightFinished:=FALSE;
-	BodyPosAdjustFinished:=FALSE;
-	BLegPosAdjustFinished:=FALSE;
-	SearchPedalFinished:=FALSE;
-	ArmControlFinished:=FALSE;
-	OrientAdjustFinished:=FALSE;
-	MlegRollBFinished:=FALSE;
-	StoneRotFinished:=FALSE;
-	RoughTuningFinished:=FALSE;
-	FineTuningFinished:=FALSE;
-	LiftMlegFinished:=FALSE;
-	SpeedUpFinished:=FALSE;
-	SlideFinished:=FALSE;
-	PushReleaseBallFinished:=FALSE;
-	SpeedDownFinished:=FALSE;
-	MlegRollCFinished:=FALSE;
-	BLegRecoveryFinished:=FALSE;
-	AddHeightFinished:=FALSE;
-	FlegRotBFinished:=FALSE;
-	RecoveryFinished:=FALSE;
-	CurlingGaitFinished:=FALSE;
+AddHeightFromWalkFinished:=FALSE;
+BlegCenterFinished:=FALSE;
+MlegRollAFinished:=FALSE;
+FlegRotAFinished:=FALSE;
+ReduceHeightFinished:=FALSE;
+BodyPosAdjustFinished:=FALSE;
+BLegPosAdjustFinished:=FALSE;
+SearchPedalFinished:=FALSE;
+ArmControlFinished:=FALSE;
+OrientAdjustFinished:=FALSE;
+MlegRollBFinished:=FALSE;
+StoneRotFinished:=FALSE;
+LiftMlegFinished:=FALSE;
+SpeedUpFinished:=FALSE;
+SlideFinished:=FALSE;
+PushReleaseBallFinished:=FALSE;
+SpeedDownFinished:=FALSE;
+BLegRecoveryFinished:=FALSE;
+MlegRollCFinished:=FALSE;
+AddHeightFinished:=FALSE;
+FlegRotBFinished:=FALSE;
+CurlingGaitFinished:=FALSE;
+RecoveryFinished:=FALSE;
+ReduceHeightBFinished:=FALSE;
 	
 	RequireRepeateBlegCenter:=FALSE;
 	RequireRepeateBodyPosAdjust:=FALSE;
@@ -638,8 +661,9 @@ gvl.ArmRetractControl:=gvl.ArmRetractControl_init;
 gvl.AC_AngleDegIn:=gvl.AC_AngleDegIn_init;	
 
 // control button for each state, need be commented out at actual environment
-RequireMlegRollA:=FALSE;
+RequireAddHeightFromWalk:=FALSE;
 RequireBlegCenter:=FALSE;
+RequireMlegRollA:=FALSE;
 RequireFlegRotA:=FALSE;
 RequireReduceHeight:=FALSE;	
 RequireBodyPosAdjust:=FALSE;
@@ -658,9 +682,12 @@ RequireBLegRecovery:=FALSE;
 RequireMlegRollC:=FALSE;
 RequireAddHeight:=FALSE;
 RequireFlegRotB:=FALSE;
+RequireRecovery:=FALSE;
+RequireReduceHeightB:=FALSE;
 
-MlegRollAFinished:=FALSE;
+AddHeightFromWalkFinished:=FALSE;
 BlegCenterFinished:=FALSE;
+MlegRollAFinished:=FALSE;
 FlegRotAFinished:=FALSE;
 ReduceHeightFinished:=FALSE;
 BodyPosAdjustFinished:=FALSE;
@@ -680,6 +707,8 @@ MlegRollCFinished:=FALSE;
 AddHeightFinished:=FALSE;
 FlegRotBFinished:=FALSE;
 CurlingGaitFinished:=FALSE;
+RecoveryFinished:=FALSE;
+ReduceHeightBFinished:=FALSE;
 
 RequireRepeateBlegCenter:=FALSE;
 RequireRepeateBodyPosAdjust:=FALSE;
@@ -800,9 +829,22 @@ VAR
 	RotRadius: LREAL;
 END_VAR]]></Declaration>
       <Implementation>
-        <ST><![CDATA[IF state=ready AND RequireBlegCenter=TRUE THEN
-	state:=BlegCenter;
+        <ST><![CDATA[IF state=ready AND RequireAddHeightFromWalk=TRUE THEN
+	state:=AddHeightFromWalk;
 	IsReady:=FALSE;
+	IsAddHeightFromWalk:=TRUE;
+	RequireAddHeightFromWalk:=FALSE;
+	body_ref_pos_enter := body_ref_pos;
+	body_ref_ang_enter := body_ref_ang;
+	leg_ref_pos_enter := leg_ref_pos;
+	EnterAddHeightFromWalkCount:=gait_cycle;
+	AddHeightFromWalkFinished:=FALSE;
+	AHFW_body_target_pos:=body_ref_pos_enter;
+	AHFW_body_target_pos.data[2]:=AHFW_body_target_pos.data[2]+AHFW_distance;	
+
+ELSIF state=AddHeightFromWalk AND RequireBlegCenter=TRUE THEN
+	state:=BlegCenter;
+	IsAddHeightFromWalk:=FALSE;
 	IsBlegCenter:=TRUE;
 	RequireBlegCenter:=FALSE;
 	body_ref_pos_enter := body_ref_pos;
@@ -1202,9 +1244,22 @@ ELSIF state=FlegRotB AND FlegRotBFinished=TRUE AND RequireRecovery=TRUE THEN
 	EnterRecoveryCount:=gait_cycle;
 	RecoveryFinished:=FALSE;	
 	RcJointPosStart:=jointPosLast;
-
-ELSIF state=Recovery AND RecoveryFinished=TRUE THEN	
+	
+ELSIF state=Recovery AND RecoveryFinished=TRUE AND RequireReduceHeightB=TRUE THEN	
+	state:=ReduceHeightB;
 	IsRecovery:=FALSE;
+	IsReduceHeightB:=TRUE;
+	RequireReduceHeightB:=FALSE;	
+	body_ref_pos_enter := body_ref_pos;
+	body_ref_ang_enter := body_ref_ang;
+	leg_ref_pos_enter := leg_ref_pos;
+	EnterReduceHeightBCount:=gait_cycle;
+	ReduceHeightBFinished:=FALSE;	
+	RHB_body_target_pos:=body_ref_pos_enter;
+	RHB_body_target_pos.data[2]:=RHB_body_target_pos.data[2]-RHB_distance;
+
+ELSIF state=ReduceHeightB AND ReduceHeightBFinished=TRUE THEN	
+	IsReduceHeightB:=FALSE;
 	IsCurlingFinished:=TRUE;
 	state:=CurlingFinished;
 	CurlingGaitFinished:=TRUE;
@@ -1258,10 +1313,12 @@ IF state=Ready THEN
 	body_ref_ang := body_ref_ang_init;
 	leg_ref_pos := leg_ref_pos_init;
 	leg_ref_pos_wrt_hip := leg_ref_pos_init_wrt_hip;
-ELSIF state=MlegRollA THEN
-	TrjPlanning_MlegRollA();
+ELSIF state=AddHeightFromWalk THEN
+	TrjPlanning_AddHeightFromWalk();
 ELSIF state=BlegCenter THEN
 	TrjPlanning_BlegCenter();
+ELSIF state=MlegRollA THEN
+	TrjPlanning_MlegRollA();
 ELSIF state=FlegRotA THEN
 	TrjPlanning_FlegRotA();
 ELSIF state=ReduceHeight THEN
@@ -1300,6 +1357,8 @@ ELSIF state=FlegRotB THEN
 	TrjPlanning_FlegRotB();
 ELSIF state=Recovery THEN	
 	TrjPlanning_Recovery();	
+ELSIF state=ReduceHeightB THEN	
+	TrjPlanning_ReduceHeightB();	
 END_IF
 
 // transform TO leg local frame AND DO inverse kinematics
@@ -1411,6 +1470,31 @@ END_VAR]]></Declaration>
 ELSE
 	AddHeightFinished:=TRUE;	
 	RequireFlegRotB:=TRUE;//********************************************************************************************************
+END_IF]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="TrjPlanning_AddHeightFromWalk" Id="{51d55fc9-a5f1-4745-917b-c2a557d4385e}">
+      <Declaration><![CDATA[METHOD PUBLIC TrjPlanning_AddHeightFromWalk : BOOL
+VAR_INPUT
+END_VAR
+VAR
+	tr: LREAL;
+	i: INT;
+	Rb_target1: Mat3;
+	temp: vec3;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF AddHeightFromWalkFinished=FALSE AND (gait_cycle-EnterAddHeightFromWalkCount)<=AHFW_time*gvl.sampleRate THEN
+	body_ref_ang:=body_ref_ang_enter;
+	leg_ref_pos:=leg_ref_pos_enter;
+	tr  := UDINT_TO_LREAL(gait_cycle - EnterAddHeightFromWalkCount) / gvl.sampleRate / AHFW_time;
+	fbGetPivot(tNow := tr, tTotal := 1.0, pivot => pvt);
+	FOR i:=0 TO 2 DO
+		body_ref_pos.data[i]:=(1-pvt)*body_ref_pos_enter.data[i]+pvt*AHFW_body_target_pos.data[i];
+	END_FOR
+ELSE
+	AddHeightFromWalkFinished:=TRUE;
 END_IF]]></ST>
       </Implementation>
     </Method>
@@ -3090,6 +3174,7 @@ IF RecoveryFinished=FALSE THEN
 		jntPosEnd :=jntAngExtend;
 		RecoveryFinished:=TRUE;
 		tipForceDesire:=tipForceDesireZeros;
+		RequireReduceHeightB:=TRUE;
 	END_IF
 	getPivot(tNow := tNow, tTotal := tTotal, pivot => pivot, pivotDot => pivotDot);
 	FOR i := 0 TO 5 DO
@@ -3137,6 +3222,31 @@ END_VAR
 	END_FOR
 ELSE
 	ReduceHeightFinished:=TRUE;
+END_IF]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="TrjPlanning_ReduceHeightB" Id="{2cc458db-bde3-4f59-b39e-a77f3f8c375f}">
+      <Declaration><![CDATA[METHOD PUBLIC TrjPlanning_ReduceHeightB : BOOL
+VAR_INPUT
+END_VAR
+VAR
+	tr: LREAL;
+	i: INT;
+	Rb_target1: Mat3;
+	temp: vec3;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF ReduceHeightBFinished=FALSE AND (gait_cycle-EnterReduceHeightBCount)<=RHB_time*gvl.sampleRate THEN
+	body_ref_ang:=body_ref_ang_enter;
+	leg_ref_pos:=leg_ref_pos_enter;
+	tr  := UDINT_TO_LREAL(gait_cycle - EnterReduceHeightBCount) / gvl.sampleRate / RHB_time;
+	fbGetPivot(tNow := tr, tTotal := 1.0, pivot => pvt);
+	FOR i:=0 TO 2 DO
+		body_ref_pos.data[i]:=(1-pvt)*body_ref_pos_enter.data[i]+pvt*RHB_body_target_pos.data[i];
+	END_FOR
+ELSE
+	ReduceHeightBFinished:=TRUE;
 END_IF]]></ST>
       </Implementation>
     </Method>
@@ -3685,23 +3795,7 @@ END_IF
       <LineId Id="50" Count="5" />
       <LineId Id="239" Count="0" />
       <LineId Id="112" Count="0" />
-      <LineId Id="77" Count="3" />
-      <LineId Id="181" Count="1" />
-      <LineId Id="204" Count="0" />
-      <LineId Id="231" Count="0" />
-      <LineId Id="180" Count="0" />
-      <LineId Id="81" Count="1" />
-      <LineId Id="85" Count="4" />
-      <LineId Id="228" Count="0" />
-      <LineId Id="90" Count="2" />
-      <LineId Id="94" Count="4" />
-      <LineId Id="184" Count="1" />
-      <LineId Id="205" Count="0" />
-      <LineId Id="230" Count="0" />
-      <LineId Id="183" Count="0" />
-      <LineId Id="99" Count="9" />
-      <LineId Id="229" Count="0" />
-      <LineId Id="109" Count="2" />
+      <LineId Id="250" Count="46" />
       <LineId Id="71" Count="0" />
       <LineId Id="146" Count="0" />
       <LineId Id="186" Count="1" />
@@ -3724,7 +3818,9 @@ END_IF
       <LineId Id="499" Count="0" />
       <LineId Id="244" Count="0" />
       <LineId Id="166" Count="0" />
-      <LineId Id="258" Count="3" />
+      <LineId Id="258" Count="1" />
+      <LineId Id="532" Count="0" />
+      <LineId Id="260" Count="1" />
       <LineId Id="418" Count="1" />
       <LineId Id="438" Count="0" />
       <LineId Id="470" Count="0" />
@@ -3733,7 +3829,12 @@ END_IF
       <LineId Id="266" Count="4" />
       <LineId Id="468" Count="0" />
       <LineId Id="271" Count="2" />
-      <LineId Id="275" Count="4" />
+      <LineId Id="529" Count="0" />
+      <LineId Id="527" Count="0" />
+      <LineId Id="534" Count="0" />
+      <LineId Id="533" Count="0" />
+      <LineId Id="275" Count="1" />
+      <LineId Id="278" Count="1" />
       <LineId Id="420" Count="1" />
       <LineId Id="439" Count="0" />
       <LineId Id="471" Count="0" />
@@ -3743,6 +3844,7 @@ END_IF
       <LineId Id="469" Count="0" />
       <LineId Id="289" Count="2" />
       <LineId Id="305" Count="0" />
+      <LineId Id="530" Count="1" />
       <LineId Id="386" Count="1" />
       <LineId Id="422" Count="1" />
       <LineId Id="440" Count="0" />
@@ -3780,6 +3882,11 @@ END_IF
       <LineId Id="9" Count="1" />
     </LineIds>
     <LineIds Name="CurlingGaitFromStance.StateMachine">
+      <LineId Id="684" Count="8" />
+      <LineId Id="680" Count="0" />
+      <LineId Id="694" Count="0" />
+      <LineId Id="693" Count="0" />
+      <LineId Id="683" Count="0" />
       <LineId Id="5" Count="0" />
       <LineId Id="26" Count="0" />
       <LineId Id="267" Count="1" />
@@ -3995,6 +4102,8 @@ END_IF
       <LineId Id="541" Count="0" />
       <LineId Id="540" Count="0" />
       <LineId Id="543" Count="0" />
+      <LineId Id="666" Count="0" />
+      <LineId Id="668" Count="11" />
       <LineId Id="531" Count="0" />
       <LineId Id="254" Count="0" />
       <LineId Id="299" Count="1" />
@@ -4008,7 +4117,12 @@ END_IF
     <LineIds Name="CurlingGaitFromStance.TrjPlanning">
       <LineId Id="6" Count="0" />
       <LineId Id="133" Count="4" />
-      <LineId Id="7" Count="8" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="492" Count="0" />
+      <LineId Id="9" Count="2" />
+      <LineId Id="491" Count="0" />
+      <LineId Id="490" Count="0" />
+      <LineId Id="12" Count="3" />
       <LineId Id="306" Count="0" />
       <LineId Id="304" Count="0" />
       <LineId Id="308" Count="0" />
@@ -4025,6 +4139,8 @@ END_IF
       <LineId Id="125" Count="5" />
       <LineId Id="336" Count="0" />
       <LineId Id="335" Count="0" />
+      <LineId Id="489" Count="0" />
+      <LineId Id="488" Count="0" />
       <LineId Id="34" Count="50" />
       <LineId Id="422" Count="0" />
       <LineId Id="420" Count="0" />
@@ -4050,6 +4166,10 @@ END_IF
       <LineId Id="29" Count="1" />
       <LineId Id="39" Count="0" />
       <LineId Id="28" Count="0" />
+    </LineIds>
+    <LineIds Name="CurlingGaitFromStance.TrjPlanning_AddHeightFromWalk">
+      <LineId Id="12" Count="9" />
+      <LineId Id="5" Count="0" />
     </LineIds>
     <LineIds Name="CurlingGaitFromStance.TrjPlanning_ArmControl">
       <LineId Id="5" Count="0" />
@@ -4616,6 +4736,7 @@ END_IF
       <LineId Id="188" Count="38" />
       <LineId Id="246" Count="0" />
       <LineId Id="378" Count="0" />
+      <LineId Id="458" Count="0" />
       <LineId Id="227" Count="0" />
       <LineId Id="229" Count="3" />
       <LineId Id="236" Count="0" />
@@ -4642,6 +4763,11 @@ END_IF
       <LineId Id="15" Count="0" />
       <LineId Id="18" Count="0" />
       <LineId Id="14" Count="0" />
+    </LineIds>
+    <LineIds Name="CurlingGaitFromStance.TrjPlanning_ReduceHeightB">
+      <LineId Id="6" Count="7" />
+      <LineId Id="20" Count="1" />
+      <LineId Id="5" Count="0" />
     </LineIds>
     <LineIds Name="CurlingGaitFromStance.TrjPlanning_SearchPedal">
       <LineId Id="5" Count="1" />
