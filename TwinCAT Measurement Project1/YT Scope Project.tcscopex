@@ -2,28 +2,28 @@
 <ScopeProject AssemblyName="TwinCAT.Measurement.Scope.API.Model">
   <Layout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="baac32c3-19fe-47d6-8cc6-9f7eab49f625" LastFocused="132857505657782982" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="4" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="b71a101b-0570-451e-9ead-00843b3afc86" LastFocused="132857546042607065" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="baac32c3-19fe-47d6-8cc6-9f7eab49f625" LastFocused="132867176469403727" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="4" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b71a101b-0570-451e-9ead-00843b3afc86" LastFocused="132867175354307071" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="5682d8a6-eb65-4c08-8711-acae23916810" LastFocused="132839645546167492" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="12" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="0995cdc9-2d51-49d2-97d1-dc1a22fe24bf" LastFocused="132857546085757953" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="3" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="0995cdc9-2d51-49d2-97d1-dc1a22fe24bf" LastFocused="132867176461243375" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="3" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="bac8439a-5d20-491e-959d-180d86f95f34" LastFocused="132839645885329117" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="13" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="79f85d7a-b0ab-43cd-b111-d4bb2eee7199" LastFocused="132839646192552419" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="17" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="39c26730-8a72-43c3-9573-f2eb19656c58" LastFocused="132839646257379134" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="16" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="a412d7db-38d9-4e45-acd2-8082992aeab9" LastFocused="132859245452321359" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="18" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="c237b4cc-2013-4280-bc01-eea0243f9236" LastFocused="132857546062346043" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="c237b4cc-2013-4280-bc01-eea0243f9236" LastFocused="132867177153306623" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="e1ec093a-8305-483b-9734-abd32e3de757" LastFocused="132839646004126400" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="14" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="ee7c19bb-5937-483b-a946-01155934d6d0" LastFocused="132839635683254900" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="11" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="757f88a7-5edb-4f04-929c-587855011ab0" LastFocused="132839635635133856" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="7" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="f7ac6675-1208-4b5e-8582-903c728ea08e" LastFocused="132839645494472115" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="6" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="97f0ef6a-da62-49ee-b981-dd9a922a5ec2" LastFocused="132859244279233171" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="97f0ef6a-da62-49ee-b981-dd9a922a5ec2" LastFocused="132867177308512236" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="6ec66a88-a290-40c1-b472-68f7a333b4f0" LastFocused="132839635645610434" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="8" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="63ad100b-9b36-4da2-9d20-69dd14e6666f" LastFocused="132839635656678982" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="9" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="93ce01fb-6a46-4b2f-aaa5-907eb8fcffb5" LastFocused="132839646288896863" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="15" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;Window Guid="6ea654d9-2c96-401e-a297-c89ba8577360" LastFocused="132839635676767796" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="10" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="4fc20aa9-baf4-4afb-95c5-f7fd79db406a" LastFocused="132857505664234159" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="5" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="4fc20aa9-baf4-4afb-95c5-f7fd79db406a" LastFocused="132867176509383526" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" DocumentIndexInWindowGroup="5" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
-      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" Collapsed="0" SelectedControl="a412d7db-38d9-4e45-acd2-8082992aeab9"&gt;
+      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="b6b50869-bb3e-4a74-b1ac-3b8dcc512bc2" Collapsed="0" SelectedControl="97f0ef6a-da62-49ee-b981-dd9a922a5ec2"&gt;
         &lt;Controls&gt;
           &lt;Control Guid="b71a101b-0570-451e-9ead-00843b3afc86" /&gt;
           &lt;Control Guid="c237b4cc-2013-4280-bc01-eea0243f9236" /&gt;
@@ -70,13 +70,13 @@
       <SubMember>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>407957</IndexOffset>
+          <IndexOffset>408165</IndexOffset>
           <SymbolName>GVL.axisForceCtrlButton[17]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>63</FileHandle>
+          <FileHandle>373</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -150,13 +150,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406232</IndexOffset>
+          <IndexOffset>406440</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[0,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>64</FileHandle>
+          <FileHandle>374</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -230,13 +230,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406240</IndexOffset>
+          <IndexOffset>406448</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[0,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>65</FileHandle>
+          <FileHandle>375</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -310,13 +310,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406248</IndexOffset>
+          <IndexOffset>406456</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[0,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>66</FileHandle>
+          <FileHandle>376</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -390,13 +390,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406256</IndexOffset>
+          <IndexOffset>406464</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[1,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>67</FileHandle>
+          <FileHandle>377</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -470,13 +470,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406264</IndexOffset>
+          <IndexOffset>406472</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[1,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>68</FileHandle>
+          <FileHandle>378</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -550,13 +550,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406272</IndexOffset>
+          <IndexOffset>406480</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[1,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>69</FileHandle>
+          <FileHandle>379</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -630,13 +630,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406280</IndexOffset>
+          <IndexOffset>406488</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[2,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>70</FileHandle>
+          <FileHandle>380</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -710,13 +710,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406288</IndexOffset>
+          <IndexOffset>406496</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[2,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>71</FileHandle>
+          <FileHandle>381</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -790,13 +790,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406296</IndexOffset>
+          <IndexOffset>406504</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[2,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>72</FileHandle>
+          <FileHandle>382</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -870,13 +870,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406304</IndexOffset>
+          <IndexOffset>406512</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[3,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>73</FileHandle>
+          <FileHandle>383</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -950,13 +950,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406312</IndexOffset>
+          <IndexOffset>406520</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[3,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>74</FileHandle>
+          <FileHandle>384</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1030,13 +1030,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406320</IndexOffset>
+          <IndexOffset>406528</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[3,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>75</FileHandle>
+          <FileHandle>385</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1110,13 +1110,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406328</IndexOffset>
+          <IndexOffset>406536</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[4,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>76</FileHandle>
+          <FileHandle>386</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1190,13 +1190,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406336</IndexOffset>
+          <IndexOffset>406544</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[4,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>77</FileHandle>
+          <FileHandle>387</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1270,13 +1270,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406344</IndexOffset>
+          <IndexOffset>406552</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[4,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>78</FileHandle>
+          <FileHandle>388</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1350,13 +1350,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406352</IndexOffset>
+          <IndexOffset>406560</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[5,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>79</FileHandle>
+          <FileHandle>389</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1430,13 +1430,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406360</IndexOffset>
+          <IndexOffset>406568</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[5,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>80</FileHandle>
+          <FileHandle>390</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1510,13 +1510,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>406368</IndexOffset>
+          <IndexOffset>406576</IndexOffset>
           <SymbolName>GVL.jntRefPosTuning[5,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>81</FileHandle>
+          <FileHandle>391</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1590,13 +1590,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61472</IndexGroup>
-          <IndexOffset>394788</IndexOffset>
+          <IndexOffset>394996</IndexOffset>
           <SymbolName>GVL.motorDrive[12].motor.actualTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>82</FileHandle>
+          <FileHandle>392</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1670,13 +1670,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61472</IndexGroup>
-          <IndexOffset>394784</IndexOffset>
+          <IndexOffset>394992</IndexOffset>
           <SymbolName>GVL.motorDrive[12].motor.actualVel</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>83</FileHandle>
+          <FileHandle>393</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1750,13 +1750,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405472</IndexOffset>
+          <IndexOffset>405680</IndexOffset>
           <SymbolName>GVL.jntRefPos[4,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>84</FileHandle>
+          <FileHandle>394</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1830,13 +1830,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405480</IndexOffset>
+          <IndexOffset>405688</IndexOffset>
           <SymbolName>GVL.jntRefPos[4,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>85</FileHandle>
+          <FileHandle>395</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1910,13 +1910,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405616</IndexOffset>
+          <IndexOffset>405824</IndexOffset>
           <SymbolName>GVL.jntRefVel[4,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>86</FileHandle>
+          <FileHandle>396</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -1990,13 +1990,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405624</IndexOffset>
+          <IndexOffset>405832</IndexOffset>
           <SymbolName>GVL.jntRefVel[4,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>87</FileHandle>
+          <FileHandle>397</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2070,13 +2070,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405512</IndexOffset>
+          <IndexOffset>405720</IndexOffset>
           <SymbolName>GVL.jntRefVel[0,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>88</FileHandle>
+          <FileHandle>398</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2150,13 +2150,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405520</IndexOffset>
+          <IndexOffset>405728</IndexOffset>
           <SymbolName>GVL.jntRefVel[0,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>89</FileHandle>
+          <FileHandle>399</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2230,13 +2230,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405528</IndexOffset>
+          <IndexOffset>405736</IndexOffset>
           <SymbolName>GVL.jntRefVel[0,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>90</FileHandle>
+          <FileHandle>400</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2310,13 +2310,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405536</IndexOffset>
+          <IndexOffset>405744</IndexOffset>
           <SymbolName>GVL.jntRefVel[1,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>91</FileHandle>
+          <FileHandle>401</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2390,13 +2390,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405544</IndexOffset>
+          <IndexOffset>405752</IndexOffset>
           <SymbolName>GVL.jntRefVel[1,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>92</FileHandle>
+          <FileHandle>402</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2470,13 +2470,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405552</IndexOffset>
+          <IndexOffset>405760</IndexOffset>
           <SymbolName>GVL.jntRefVel[1,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>93</FileHandle>
+          <FileHandle>403</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2550,13 +2550,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405560</IndexOffset>
+          <IndexOffset>405768</IndexOffset>
           <SymbolName>GVL.jntRefVel[2,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>94</FileHandle>
+          <FileHandle>404</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2630,13 +2630,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405568</IndexOffset>
+          <IndexOffset>405776</IndexOffset>
           <SymbolName>GVL.jntRefVel[2,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>95</FileHandle>
+          <FileHandle>405</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2710,13 +2710,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405576</IndexOffset>
+          <IndexOffset>405784</IndexOffset>
           <SymbolName>GVL.jntRefVel[2,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>96</FileHandle>
+          <FileHandle>406</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2790,13 +2790,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405584</IndexOffset>
+          <IndexOffset>405792</IndexOffset>
           <SymbolName>GVL.jntRefVel[3,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>97</FileHandle>
+          <FileHandle>407</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2870,13 +2870,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405592</IndexOffset>
+          <IndexOffset>405800</IndexOffset>
           <SymbolName>GVL.jntRefVel[3,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>98</FileHandle>
+          <FileHandle>408</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -2950,13 +2950,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405600</IndexOffset>
+          <IndexOffset>405808</IndexOffset>
           <SymbolName>GVL.jntRefVel[3,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>99</FileHandle>
+          <FileHandle>409</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3030,13 +3030,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405608</IndexOffset>
+          <IndexOffset>405816</IndexOffset>
           <SymbolName>GVL.jntRefVel[4,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>100</FileHandle>
+          <FileHandle>410</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3110,13 +3110,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405632</IndexOffset>
+          <IndexOffset>405840</IndexOffset>
           <SymbolName>GVL.jntRefVel[5,0]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>101</FileHandle>
+          <FileHandle>411</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3190,13 +3190,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405640</IndexOffset>
+          <IndexOffset>405848</IndexOffset>
           <SymbolName>GVL.jntRefVel[5,1]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>102</FileHandle>
+          <FileHandle>412</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3270,13 +3270,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>405648</IndexOffset>
+          <IndexOffset>405856</IndexOffset>
           <SymbolName>GVL.jntRefVel[5,2]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>103</FileHandle>
+          <FileHandle>413</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3350,13 +3350,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>388856</IndexOffset>
+          <IndexOffset>389064</IndexOffset>
           <SymbolName>GVL.motorDrive[0].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>104</FileHandle>
+          <FileHandle>414</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3430,13 +3430,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>389352</IndexOffset>
+          <IndexOffset>389560</IndexOffset>
           <SymbolName>GVL.motorDrive[1].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>105</FileHandle>
+          <FileHandle>415</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3510,13 +3510,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>389848</IndexOffset>
+          <IndexOffset>390056</IndexOffset>
           <SymbolName>GVL.motorDrive[2].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>106</FileHandle>
+          <FileHandle>416</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3590,13 +3590,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>390344</IndexOffset>
+          <IndexOffset>390552</IndexOffset>
           <SymbolName>GVL.motorDrive[3].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>107</FileHandle>
+          <FileHandle>417</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3670,13 +3670,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>390840</IndexOffset>
+          <IndexOffset>391048</IndexOffset>
           <SymbolName>GVL.motorDrive[4].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>108</FileHandle>
+          <FileHandle>418</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3750,13 +3750,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>391336</IndexOffset>
+          <IndexOffset>391544</IndexOffset>
           <SymbolName>GVL.motorDrive[5].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>109</FileHandle>
+          <FileHandle>419</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3830,13 +3830,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>391832</IndexOffset>
+          <IndexOffset>392040</IndexOffset>
           <SymbolName>GVL.motorDrive[6].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>110</FileHandle>
+          <FileHandle>420</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3910,13 +3910,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>392328</IndexOffset>
+          <IndexOffset>392536</IndexOffset>
           <SymbolName>GVL.motorDrive[7].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>111</FileHandle>
+          <FileHandle>421</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -3990,13 +3990,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>392824</IndexOffset>
+          <IndexOffset>393032</IndexOffset>
           <SymbolName>GVL.motorDrive[8].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>112</FileHandle>
+          <FileHandle>422</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4070,13 +4070,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>393320</IndexOffset>
+          <IndexOffset>393528</IndexOffset>
           <SymbolName>GVL.motorDrive[9].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>113</FileHandle>
+          <FileHandle>423</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4150,13 +4150,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>393816</IndexOffset>
+          <IndexOffset>394024</IndexOffset>
           <SymbolName>GVL.motorDrive[10].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>114</FileHandle>
+          <FileHandle>424</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4230,13 +4230,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>394312</IndexOffset>
+          <IndexOffset>394520</IndexOffset>
           <SymbolName>GVL.motorDrive[11].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>115</FileHandle>
+          <FileHandle>425</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4310,13 +4310,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>394808</IndexOffset>
+          <IndexOffset>395016</IndexOffset>
           <SymbolName>GVL.motorDrive[12].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>116</FileHandle>
+          <FileHandle>426</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4390,13 +4390,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>395304</IndexOffset>
+          <IndexOffset>395512</IndexOffset>
           <SymbolName>GVL.motorDrive[13].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>117</FileHandle>
+          <FileHandle>427</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4470,13 +4470,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>395800</IndexOffset>
+          <IndexOffset>396008</IndexOffset>
           <SymbolName>GVL.motorDrive[14].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>118</FileHandle>
+          <FileHandle>428</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4550,13 +4550,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>396296</IndexOffset>
+          <IndexOffset>396504</IndexOffset>
           <SymbolName>GVL.motorDrive[15].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>119</FileHandle>
+          <FileHandle>429</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4630,13 +4630,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>396792</IndexOffset>
+          <IndexOffset>397000</IndexOffset>
           <SymbolName>GVL.motorDrive[16].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>120</FileHandle>
+          <FileHandle>430</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4710,13 +4710,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>397288</IndexOffset>
+          <IndexOffset>397496</IndexOffset>
           <SymbolName>GVL.motorDrive[17].motor.targetTrq</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>121</FileHandle>
+          <FileHandle>431</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4790,13 +4790,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>394992</IndexOffset>
+          <IndexOffset>395200</IndexOffset>
           <SymbolName>GVL.motorDrive[12].tgtAngle</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>122</FileHandle>
+          <FileHandle>432</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4870,13 +4870,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>395000</IndexOffset>
+          <IndexOffset>395208</IndexOffset>
           <SymbolName>GVL.motorDrive[12].tgtAngVel</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>123</FileHandle>
+          <FileHandle>433</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4950,13 +4950,13 @@
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16448</IndexGroup>
-          <IndexOffset>407664</IndexOffset>
+          <IndexOffset>407872</IndexOffset>
           <SymbolName>GVL.jogVelocity[20]</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>851</TargetPort>
           <ContextMask>0</ContextMask>
           <IsHistorical>false</IsHistorical>
-          <FileHandle>124</FileHandle>
+          <FileHandle>434</FileHandle>
           <ServerHandle>0</ServerHandle>
           <ChannelStyleInformation />
           <Enabled>true</Enabled>
@@ -4990,16 +4990,16 @@
               <Offset>0</Offset>
               <Symbol></Symbol>
               <ReturnText> (None) </ReturnText>
-              <BaseUnitString />
-              <NameExtension />
+              <BaseUnitString></BaseUnitString>
+              <NameExtension></NameExtension>
             </Unit>
             <Transformation>
               <BaseUnitValue>0</BaseUnitValue>
               <TargetUnitValue>0</TargetUnitValue>
               <ScaleFactor>1</ScaleFactor>
               <Name>None</Name>
-              <SourceUnitString />
-              <TargetUnitString />
+              <SourceUnitString></SourceUnitString>
+              <TargetUnitString></TargetUnitString>
               <SourceUnitPrefix>none</SourceUnitPrefix>
               <Symbol>1</Symbol>
             </Transformation>
@@ -5010,9 +5010,9 @@
               <Offset>0</Offset>
               <Name>None</Name>
               <BaseName>UnitOfOne</BaseName>
-              <NameExtension />
+              <NameExtension></NameExtension>
               <Symbol></Symbol>
-              <BaseUnitString />
+              <BaseUnitString></BaseUnitString>
               <UserPrefix>none</UserPrefix>
             </UserUnit>
             <UnitScaleResult>1</UnitScaleResult>
@@ -14833,16 +14833,16 @@
                       <Offset>0</Offset>
                       <Symbol></Symbol>
                       <ReturnText> (None) </ReturnText>
-                      <BaseUnitString />
-                      <NameExtension />
+                      <BaseUnitString></BaseUnitString>
+                      <NameExtension></NameExtension>
                     </Unit>
                     <Transformation>
                       <BaseUnitValue>0</BaseUnitValue>
                       <TargetUnitValue>0</TargetUnitValue>
                       <ScaleFactor>1</ScaleFactor>
                       <Name>None</Name>
-                      <SourceUnitString />
-                      <TargetUnitString />
+                      <SourceUnitString></SourceUnitString>
+                      <TargetUnitString></TargetUnitString>
                       <SourceUnitPrefix>none</SourceUnitPrefix>
                       <Symbol>1</Symbol>
                     </Transformation>
@@ -14853,9 +14853,9 @@
                       <Offset>0</Offset>
                       <Name>None</Name>
                       <BaseName>UnitOfOne</BaseName>
-                      <NameExtension />
+                      <NameExtension></NameExtension>
                       <Symbol></Symbol>
-                      <BaseUnitString />
+                      <BaseUnitString></BaseUnitString>
                       <UserPrefix>none</UserPrefix>
                     </UserUnit>
                     <UnitScaleResult>1</UnitScaleResult>

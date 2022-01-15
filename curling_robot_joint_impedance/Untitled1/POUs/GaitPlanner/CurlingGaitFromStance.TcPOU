@@ -94,7 +94,7 @@ VAR
 													 0,0,0,
 													 0,0,0,
 													 0,0,0];	
-	
+	compensateDistance:LREAL:=0.1491;//used in ADD/REDUCE height
 	//state machine 
 	state:UINT;
 	Ready:UINT:=1;//init state
@@ -238,7 +238,6 @@ VAR
 	EnterReduceHeightBCount:UDINT;
 	
 	//AddHeightFromWalk
-	AHFW_distance:LREAL:=0.1491;
 	AHFW_time:LREAL:=2;
 	AHFW_body_target_pos: Vec3;	
 		
@@ -322,12 +321,12 @@ VAR
 	SP_BPosRefWrtHip:ARRAY[0..1] OF vec3;
 	SP_BPosLockWrtHip:ARRAY[0..1] OF vec3;
 	SP_LiftLegTime:LREAL:=0.5;
-	SP_LiftDistance:LREAL:=0.03;
+	SP_LiftDistance:LREAL:=0.025;//0.03
 	SP_SearchTime:LREAL:=3;
 	SP_SearchDistance:LREAL:=0.05;
 	
 	//ArmControl
-	AC_time:LREAL:=5;
+	AC_time:LREAL:=3;
 	AC_AngleDeg:LREAL:=-15;
 	AC_AngleRad:LREAL:=-15*pi/180;
 	AC_Velocity:LREAL;
@@ -458,7 +457,7 @@ VAR
 	MlegRollC_MJntTarget:ARRAY[0..1,0..2] OF LREAL;
 	
 	//AddHeight
-	AddHeightTime:LREAL:=1;
+	AddHeightTime:LREAL:=2;
 	AddHeight_FJntStart:ARRAY[0..1] OF vec3;
 	AddHeight_FPosWrtHip:ARRAY[0..1] OF vec3;
 	
@@ -474,14 +473,13 @@ VAR
 	jntAngExtend:ARRAY[0..5,0..2] OF LREAL;	
 	tRetract   : LREAL := 3;
 	tWait      : LREAL := 1;
-	tExtend    : LREAL := 3;	
+	tExtend    : LREAL := 1;	
 	pivot, pivotDot : LREAL;
 	RcJointPosRef:ARRAY[0..5,0..2] OF LREAL;	
 	Rc_PosWrtHip:ARRAY[0..5] OF vec3;
 	FlegRotB_FJntState3:ARRAY[0..1,0..2] OF LREAL;
 	
 	//ReduceHeightB
-	RHB_distance:LREAL:=0.1491;
 	RHB_time:LREAL:=2;
 	RHB_body_target_pos: Vec3;
 	
@@ -607,6 +605,9 @@ FlegRotBFinished:=FALSE;
 CurlingGaitFinished:=FALSE;
 RecoveryFinished:=FALSE;
 ReduceHeightBFinished:=FALSE;
+ReadyFinished:=FALSE;
+IsCurlingFinished:=FALSE;
+CurlingGaitFinished:=FALSE;
 	
 	RequireRepeateBlegCenter:=FALSE;
 	RequireRepeateBodyPosAdjust:=FALSE;
@@ -725,21 +726,15 @@ IsReady:=true;
 
 FOR i := 0 TO 5 DO
 	FOR j := 0 TO 2 DO
-		IF ABS(gvl.jntLastRefPos[i, j] - gvl.jntActualPos[i, j]) < gvl.curling_threshold_value THEN
+		(*IF ABS(gvl.jntLastRefPos[i, j] - gvl.jntActualPos[i, j]) < gvl.curling_threshold_value THEN
 			joint_ref_pos_init[i].data[j] := gvl.jntLastRefPos[i, j];
 		ELSE
 			joint_ref_pos_init[i].data[j] := gvl.jntActualPos[i, j];
-		END_IF
+		END_IF*)
+		joint_ref_pos_init[i].data[j] := gvl.jntLastRefPos[i, j];
 		jointPosLast[i,j]:=joint_ref_pos_init[i].data[j];
 	END_FOR
 END_FOR
-
-(*FOR i := 0 TO 5 DO
-	FOR j := 0 TO 2 DO
-		joint_ref_pos_init[i].data[j] := gvl.jntActualPos[i, j];
-		jointPosLast[i,j]:=joint_ref_pos_init[i].data[j];
-	END_FOR
-END_FOR*)
 
 sum_height := 0;
 FOR j := 0 TO 5 DO
@@ -840,7 +835,7 @@ END_VAR]]></Declaration>
 	EnterAddHeightFromWalkCount:=gait_cycle;
 	AddHeightFromWalkFinished:=FALSE;
 	AHFW_body_target_pos:=body_ref_pos_enter;
-	AHFW_body_target_pos.data[2]:=AHFW_body_target_pos.data[2]+AHFW_distance;	
+	AHFW_body_target_pos.data[2]:=AHFW_body_target_pos.data[2]+compensateDistance;	
 
 ELSIF state=AddHeightFromWalk AND RequireBlegCenter=TRUE THEN
 	state:=BlegCenter;
@@ -1217,7 +1212,7 @@ ELSIF state=MlegRollC AND MlegRollCFinished=TRUE AND RequireAddHeight=TRUE THEN
 		END_FOR
 	END_FOR
 	body_target_pos:=body_ref_pos_enter;
-	body_target_pos.data[2]:=sum_height/6.0;
+	body_target_pos.data[2]:=sum_height/6.0+compensateDistance;
 ELSIF state=AddHeight AND AddHeightFinished=TRUE AND RequireFlegRotB=TRUE THEN	
 	state:=FlegRotB;
 	IsAddHeight:=FALSE;
@@ -1256,7 +1251,7 @@ ELSIF state=Recovery AND RecoveryFinished=TRUE AND RequireReduceHeightB=TRUE THE
 	EnterReduceHeightBCount:=gait_cycle;
 	ReduceHeightBFinished:=FALSE;	
 	RHB_body_target_pos:=body_ref_pos_enter;
-	RHB_body_target_pos.data[2]:=RHB_body_target_pos.data[2]-RHB_distance;
+	RHB_body_target_pos.data[2]:=RHB_body_target_pos.data[2]-compensateDistance;
 
 ELSIF state=ReduceHeightB AND ReduceHeightBFinished=TRUE THEN	
 	IsReduceHeightB:=FALSE;
@@ -1495,6 +1490,7 @@ END_VAR
 	END_FOR
 ELSE
 	AddHeightFromWalkFinished:=TRUE;
+	RequireBlegCenter:=true;
 END_IF]]></ST>
       </Implementation>
     </Method>
@@ -3797,6 +3793,7 @@ END_IF
       <LineId Id="112" Count="0" />
       <LineId Id="250" Count="46" />
       <LineId Id="71" Count="0" />
+      <LineId Id="304" Count="2" />
       <LineId Id="146" Count="0" />
       <LineId Id="186" Count="1" />
       <LineId Id="206" Count="0" />
@@ -3857,12 +3854,11 @@ END_IF
       <LineId Id="202" Count="0" />
       <LineId Id="205" Count="0" />
       <LineId Id="361" Count="0" />
-      <LineId Id="363" Count="8" />
+      <LineId Id="363" Count="6" />
+      <LineId Id="548" Count="0" />
+      <LineId Id="370" Count="1" />
       <LineId Id="362" Count="0" />
-      <LineId Id="22" Count="2" />
-      <LineId Id="28" Count="0" />
-      <LineId Id="141" Count="0" />
-      <LineId Id="30" Count="21" />
+      <LineId Id="32" Count="19" />
       <LineId Id="88" Count="3" />
       <LineId Id="87" Count="0" />
       <LineId Id="347" Count="0" />
@@ -4169,6 +4165,7 @@ END_IF
     </LineIds>
     <LineIds Name="CurlingGaitFromStance.TrjPlanning_AddHeightFromWalk">
       <LineId Id="12" Count="9" />
+      <LineId Id="31" Count="0" />
       <LineId Id="5" Count="0" />
     </LineIds>
     <LineIds Name="CurlingGaitFromStance.TrjPlanning_ArmControl">
