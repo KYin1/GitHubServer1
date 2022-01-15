@@ -344,6 +344,7 @@ VAR
 	OA_legPosEnterExtract:ARRAY[0..5] OF vec3;
 	OA_MJntExtend:ARRAY[0..1,0..2] OF LREAL;
 	OA_MJntExtract:ARRAY[0..1,0..2] OF LREAL;
+	StonePos:ARRAY[0..7,0..2] OF LREAL;
 	
 	//MlegRollB
 	MlegRollB_MJntStart:ARRAY[0..1] OF vec3;
@@ -620,7 +621,21 @@ state:=Ready;
 ReadyFinished:=true;
 quit_flag  := FALSE;
 gait_cycle := 0;
-AC_visual_start:=false;
+AC_visual_start:=FALSE;
+
+gvl.adjust_angle_degree:=gvl.adjust_angle_degree_init;
+gvl.target_vel:=gvl.target_vel_init;
+gvl.stone_rot_vel:=gvl.stone_rot_vel_init;//rpm
+gvl.PushVelocityIn:=gvl.PushVelocityIn_init;
+gvl.BPA_adjust_angle_degree:=gvl.BPA_adjust_angle_degree_init;//degree
+gvl.BPA_adjust_x:=gvl.BPA_adjust_x_init;
+gvl.BPA_adjust_y:=gvl.BPA_adjust_y_init;
+gvl.BLPA_adjust_distance_desire:=gvl.BLPA_adjust_distance_desire_init;	
+gvl.curlingPushModel:=gvl.curlingPushModel_init;	
+gvl.PushFinishDurationTimeIn:=gvl.PushFinishDurationTimeIn_init;
+gvl.slideTimeIn:=gvl.slideTimeIn_init;
+gvl.ArmRetractControl:=gvl.ArmRetractControl_init;
+gvl.AC_AngleDegIn:=gvl.AC_AngleDegIn_init;	
 
 // control button for each state, need be commented out at actual environment
 RequireMlegRollA:=FALSE;
@@ -2852,10 +2867,10 @@ END_VAR
 VAR
 	legExtractRefPosCurling: ARRAY[0..5, 0..2] OF LREAL:=[-0.35,-0.3+0.02,0,
 														  0.1,-0.3+0.02,-0.1246,
-														  -0.15,-0.3+0.02,-0.1246,
-														  -0.15,-0.3+0.02,0.1246,
+														  -0.3+0.05,-0.3+0.02,-0.1246,
+														  -0.3+0.05,-0.3+0.02,0.1246,
 														  0.1,-0.3+0.02,0.1246,
-														  -0.35,-0.3+0.02,0];
+														  -0.35,-0.3+0.02,0];//-0.15 for front leg
 	jntExtractRefPosCurling: ARRAY[0..5, 0..2] OF LREAL:=[0,163.1808*pi/180,297.208*pi/180,
 											  			  0,322.9120*pi/180,(205.1705-322.9120)*pi/180,
 											              0,183.8227*pi/180,(269.8634-183.8227)*pi/180,
@@ -2864,10 +2879,10 @@ VAR
 											              0,163.1808*pi/180,297.208*pi/180];
 	legExtendRefPosCurling: ARRAY[0..5, 0..2] OF LREAL:=[-0.35,-0.4-0.07,0,
 														  0.1,-0.4-0.07,-0.1246,
-														  -0.15,-0.4-0.07,-0.1246,
-														  -0.15,-0.4-0.07,0.1246,
+														  -0.3+0.05,-0.4-0.07,-0.1246,
+														  -0.3+0.05,-0.4-0.07,0.1246,
 														  0.1,-0.4-0.07,0.1246,
-														  -0.35,-0.4-0.07,0];														 
+														  -0.35,-0.4-0.07,0];	//-0.15 for front leg													 
 	jntExtendRefPosCurling: ARRAY[0..5, 0..2] OF LREAL:=[0,181.9845*pi/180,299.9603*pi/180,
 											 			 0,302.7132*pi/180,(230.9946-302.7132)*pi/180,	
 											             0,222.0252*pi/180,(254.0072-222.0252)*pi/180,
@@ -3704,6 +3719,9 @@ END_IF
       <LineId Id="163" Count="0" />
       <LineId Id="162" Count="0" />
       <LineId Id="485" Count="0" />
+      <LineId Id="500" Count="8" />
+      <LineId Id="510" Count="3" />
+      <LineId Id="499" Count="0" />
       <LineId Id="244" Count="0" />
       <LineId Id="166" Count="0" />
       <LineId Id="258" Count="3" />

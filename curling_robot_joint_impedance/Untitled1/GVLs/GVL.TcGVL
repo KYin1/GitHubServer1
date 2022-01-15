@@ -369,22 +369,36 @@ VAR_GLOBAL
 	setRcRefAngButton:BOOL:=FALSE;
 	
 	//curling
-	adjust_angle_degree:LREAL:=-2;//degree
+	adjust_angle_degree:LREAL:=0;//degree
 	target_vel:LREAL:=2;//m/s
-	stone_rot_vel:LREAL:=-30;//rpm
-	fine_adjust_angle_degree:LREAL:=0;//degree
-	PushVelocityIn:LREAL:=2.7;
+	stone_rot_vel:LREAL:=-60;//rpm
+	PushVelocityIn:LREAL:=2.3;
 	BPA_adjust_angle_degree:LREAL:=0;//degree
 	BPA_adjust_x:LREAL:=-0.1;
 	BPA_adjust_y:LREAL:=0;
 	BLPA_adjust_distance_desire:ARRAY[0..1,0..2] OF LREAL:=[0,0,0,
-															0,0,0];//[0,-0.01,0,0,0.01,0]
+															0,0,0];//[0,-0.01,0,0,0.01,0]																												
 	curlingPushModel        :  UINT   := 0;
 	curlingPushModelList :  ARRAY[0..1] OF WSTRING(20) := ["Push", "noPush"];
 	PushFinishDurationTimeIn:LREAL:=3;
 	slideTimeIn:LREAL:=0.3;
 	ArmRetractControl:BOOL:=FALSE;
-	AC_AngleDegIn:lreal:=-40;
+	AC_AngleDegIn:LREAL:=-40;
+	//init value
+	adjust_angle_degree_init:LREAL:=0;//degree
+	target_vel_init:LREAL:=2;//m/s
+	stone_rot_vel_init:LREAL:=-60;//rpm
+	PushVelocityIn_init:LREAL:=2.3;
+	BPA_adjust_angle_degree_init:LREAL:=0;//degree
+	BPA_adjust_x_init:LREAL:=-0.1;
+	BPA_adjust_y_init:LREAL:=0;
+	BLPA_adjust_distance_desire_init:ARRAY[0..1,0..2] OF LREAL:=[0,0,0,
+															0,0,0];	
+	curlingPushModel_init        :  UINT   := 0;	
+	PushFinishDurationTimeIn_init:LREAL:=3;
+	slideTimeIn_init:LREAL:=0.3;
+	ArmRetractControl_init:BOOL:=FALSE;
+	AC_AngleDegIn_init:LREAL:=-40;	
 
 	//BLegSlip
 	BLegSlip_trot_vel_desire:LREAL:=0;
