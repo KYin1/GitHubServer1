@@ -344,7 +344,7 @@ END_IF
 
 getPivot(tNow := tNow, tTotal := tTotal, pivot => pivot, pivotDot => pivotDot);
 
-//tipForceDesire:=tipForceDesireZeros;//关闭力补偿******************************************************************************************************	
+tipForceDesire:=tipForceDesireZeros;//力补偿control button******************************************************************************************************	
 FOR i:=0 TO 5 DO
 	tempTipForce[0]:=tipForceDesire[i,0];tempTipForce[1]:=tipForceDesire[i,1];tempTipForce[2]:=tipForceDesire[i,2];
 	temJntActPos[0]:=gvl.jntActualPos[i,0];temJntActPos[1]:=gvl.jntActualPos[i,1];temJntActPos[2]:=gvl.jntActualPos[i,2];

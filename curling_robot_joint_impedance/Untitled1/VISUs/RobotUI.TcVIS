@@ -7299,7 +7299,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL.gaitPlanner.liftBodyGaitPlanner.height"</v>
+                      <v n="Value">"GVL.ReduceDistance"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -83184,10 +83184,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d5c60e1a-6486-465c-9675-2797e27d086a</v>
-                <v>FB_Exit</v>
-                <v>a3ad0f9a-1ce8-4057-8a9e-617cc2afd087</v>
                 <v>FB_Reinit</v>
                 <v>97b7d3ca-3c1e-495f-b670-e50a1b1b2163</v>
+                <v>FB_Exit</v>
+                <v>a3ad0f9a-1ce8-4057-8a9e-617cc2afd087</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{f65b4c99-f4bb-4bdd-bce5-2055bdafa004}</v>

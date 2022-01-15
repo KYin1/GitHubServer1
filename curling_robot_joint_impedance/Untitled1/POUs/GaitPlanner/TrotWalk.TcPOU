@@ -167,7 +167,8 @@ VAR
 	jntFce : ARRAY[0..5] OF Vec3;
 	tipFce : ARRAY[0..5] OF Vec3;//2G
 	tipFce2B : ARRAY[0..5] OF Vec3;
-	tipFce2H : ARRAY[0..5] OF Vec3;									 
+	tipFce2H : ARRAY[0..5] OF Vec3;		
+	jointFceStartRelease  : ARRAY[0..5, 0..2] OF LREAL;							 
 	
 END_VAR
 ]]></Declaration>
@@ -646,7 +647,7 @@ IF stopGroup[0]=TRUE AND stopGroup[1]=TRUE AND require_stop=TRUE AND readyToRele
 	readyToRelease:=TRUE;
 	enterReadyToReleaseCount:=gait_cycle;
 	isTrotWalk:=FALSE;
-	//quit_flag:=TRUE;
+	jointFceStartRelease:=jointFceTarget;
 END_IF
 
 
@@ -678,7 +679,7 @@ VAR
 	tip_pos, tip_vel : Vec3;
 	jointTmpPosLast: ARRAY[0..2] OF LREAL;
 	
-	tipForceDesireLegA:	 ARRAY[0..5,0..2] OF LREAL:=[0,-125,0,
+	tipForceDesireLegA:	 ARRAY[0..5,0..2] OF LREAL:=[0,-125*0.3,0,
 													 0,0,0,
 													 0,0,0,
 													 0,0,0,
@@ -689,7 +690,7 @@ VAR
 													 0,0,0,
 													 0,0,0,
 													 0,0,0,
-													 0,-145,0];
+													 0,-145*0,0];
 	tr: LREAL;
 	
 	tempTipForce:ARRAY [0..2] OF LREAL;
@@ -948,14 +949,15 @@ IF isTrotWalk=TRUE THEN
 		END_FOR
 	END_FOR	
 END_IF
-IF readyToRelease=TRUE THEN//use 50 count to release
+IF readyToRelease=TRUE THEN//use 100 count to release
 	FOR i := 0 TO 5 DO
 		FOR j := 0 TO 2 DO
-			jointFceTarget[i, j] := jointFceTarget[i, j]-0.02*jntFce[i].data[j];
+			jointFceTarget[i, j] := jointFceStartRelease[i, j]-0.01*(gait_cycle-enterReadyToReleaseCount)*jointFceStartRelease[i,j];
 		END_FOR
 	END_FOR
-	IF gait_cycle*delta_T-enterReadyToReleaseCount*delta_T>=50*delta_T THEN
+	IF gait_cycle*delta_T-enterReadyToReleaseCount*delta_T>=100*delta_T THEN
 		quit_flag:=TRUE;
+		readyToRelease:=FALSE;
 	END_IF
 END_IF
 
@@ -1233,7 +1235,7 @@ END_IF]]></ST>
       <LineId Id="197" Count="0" />
       <LineId Id="326" Count="1" />
       <LineId Id="337" Count="0" />
-      <LineId Id="287" Count="0" />
+      <LineId Id="346" Count="0" />
       <LineId Id="198" Count="0" />
       <LineId Id="328" Count="0" />
       <LineId Id="27" Count="0" />
@@ -1355,7 +1357,9 @@ END_IF]]></ST>
       <LineId Id="598" Count="1" />
       <LineId Id="595" Count="0" />
       <LineId Id="594" Count="0" />
-      <LineId Id="636" Count="8" />
+      <LineId Id="636" Count="7" />
+      <LineId Id="742" Count="0" />
+      <LineId Id="644" Count="0" />
       <LineId Id="544" Count="0" />
       <LineId Id="549" Count="0" />
       <LineId Id="269" Count="2" />
