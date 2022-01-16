@@ -421,13 +421,13 @@ VAR
 	PushReleaseBall_FPosStartWrtHip:ARRAY[0..1] OF vec3;
 	PushReleaseBall_FJntRef:ARRAY[0..1] OF vec3;
 	PushReleaseBall_FPosWrtHip:ARRAY[0..1] OF vec3;
-	PRDistance_x_total:LREAL:=0.3;
+	PRDistance_x_total:LREAL:=0.3*2/3.0;//0.3足尖击打球
 	PushTime:LREAL:=0.2;
 	PushDistance:LREAL:=0.2;
 	PRConstVelDistance:LREAL:=0.05;
-	PRConstVelTime:LREAL:=0.05;
+	PRConstVelTime:LREAL:=0.05*2/3.0;//0.05
 	DecVelTime:LREAL:=0.1;
-	DecVelDistance:LREAL:=0.05;
+	DecVelDistance:LREAL:=0.05*2/3.0;//0.05
 	PushVelocity:LREAL:=0.5;
 	ReleaseTime:LREAL:=0.25;
 	EnterPushFinishCount:UDINT;
