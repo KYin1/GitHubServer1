@@ -647,6 +647,20 @@ quit_flag  := FALSE;
 gait_cycle := 0;
 AC_visual_start:=FALSE;
 
+IF gvl.taskChooseId=0 THEN //击打
+	gvl.target_vel_init:=2;
+	gvl.PushVelocityIn_init:=2.3;
+	gvl.stone_rot_vel_init:=-60;
+	gvl.slideTimeIn_init:=0.3;
+	gvl.PushFinishDurationTimeIn_init:=3;
+ELSE //进营
+	gvl.target_vel_init:=2;
+	gvl.PushVelocityIn_init:=1.15;
+	gvl.stone_rot_vel_init:=30;	
+	gvl.slideTimeIn_init:=0.3;
+	gvl.PushFinishDurationTimeIn_init:=3;
+END_IF
+
 gvl.adjust_angle_degree:=gvl.adjust_angle_degree_init;
 gvl.target_vel:=gvl.target_vel_init;
 gvl.stone_rot_vel:=gvl.stone_rot_vel_init;//rpm
@@ -3810,6 +3824,17 @@ END_IF
       <LineId Id="163" Count="0" />
       <LineId Id="162" Count="0" />
       <LineId Id="485" Count="0" />
+      <LineId Id="563" Count="0" />
+      <LineId Id="562" Count="0" />
+      <LineId Id="564" Count="0" />
+      <LineId Id="568" Count="1" />
+      <LineId Id="572" Count="1" />
+      <LineId Id="566" Count="0" />
+      <LineId Id="570" Count="1" />
+      <LineId Id="567" Count="0" />
+      <LineId Id="575" Count="0" />
+      <LineId Id="574" Count="0" />
+      <LineId Id="565" Count="0" />
       <LineId Id="500" Count="8" />
       <LineId Id="510" Count="3" />
       <LineId Id="499" Count="0" />

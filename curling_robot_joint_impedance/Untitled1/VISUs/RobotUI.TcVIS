@@ -22604,6 +22604,401 @@
                     <v n="VisualElementId">919</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
+                  <o>
+                    <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                    <l n="Elements" t="ArrayList" />
+                    <n n="VisualElementDescription" />
+                    <o n="VisualElemMemberList" t="VisualElemMemberList">
+                      <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                        <o>
+                          <v n="Id">1988609688L</v>
+                          <v n="Value">"BC2A4FA5-14BB-4918-8204-CD9A59198925"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3649724534L</v>
+                          <v n="Value">20</v>
+                        </o>
+                        <o>
+                          <v n="Id">1943969894L</v>
+                          <v n="Value" t="Int16">2</v>
+                        </o>
+                        <o>
+                          <v n="Id">1970058906L</v>
+                          <v n="Value">20</v>
+                        </o>
+                        <o>
+                          <v n="Id">686910351L</v>
+                          <v n="Value">"STYLE"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2028009121L</v>
+                          <v n="Value">"HCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3191134607L</v>
+                          <v n="Value">"VCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3218484809L</v>
+                          <v n="Value">"NONE"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2919971128L</v>
+                          <v n="Value">"Arial"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1546705513L</v>
+                          <v n="Value" t="Int16">12</v>
+                        </o>
+                        <o>
+                          <v n="Id">3398726742L</v>
+                          <v n="Value">0U</v>
+                        </o>
+                        <o>
+                          <v n="Id">596717991L</v>
+                          <v n="Value">0U</v>
+                        </o>
+                        <o>
+                          <v n="Id">2814868741L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">2812299069L</v>
+                          <v n="Value">4292137160U</v>
+                        </o>
+                        <o>
+                          <v n="Id">494569607L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">3719097617L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">1649127785L</v>
+                          <v n="Value">269</v>
+                        </o>
+                        <o>
+                          <v n="Id">357335551L</v>
+                          <v n="Value">13</v>
+                        </o>
+                        <o>
+                          <v n="Id">2422045748L</v>
+                          <v n="Value" t="Int16">80</v>
+                        </o>
+                        <o>
+                          <v n="Id">2134141914L</v>
+                          <v n="Value">30</v>
+                        </o>
+                        <o>
+                          <v n="Id">1668544811L</v>
+                          <o n="Value" t="StructuredTypeNode">
+                            <v n="StructuredTypeNodeIsAnimation">false</v>
+                            <l n="TypeNodeChildren" t="ArrayList">
+                              <o t="DynamicArrayNode">
+                                <o n="DynamicArrayNodeCounterNode" t="BasicTypeNode">
+                                  <v n="Flags">0L</v>
+                                  <v n="BasicTypeNodeValue" t="Int16">1</v>
+                                  <v n="BasicTypeNodeAcceptsExpression">false</v>
+                                  <n n="BasicTypeNodeFastAccess" />
+                                  <a n="BasicTypeNodeEnumValues" et="String" />
+                                  <n n="EnumValueDisplayTextIds" />
+                                  <n n="EnumValueVisibilityAttributeValues" />
+                                  <n n="EnumValueLibraryId" />
+                                  <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                                  <l n="TypeNodeChildren" t="ArrayList" />
+                                  <o n="TypeNodeType" t="TypeNodeType">
+                                    <v n="TypeClass" t="TypeClass">Int</v>
+                                    <v n="QualifiedName">"INT"</v>
+                                    <v n="Name">"INT"</v>
+                                  </o>
+                                  <v n="TypeNodeName">"iColumnCount"</v>
+                                  <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                                    <v n="AttrFlags">1UL</v>
+                                    <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                      <v>Visible</v>
+                                      <v>False</v>
+                                      <v>''DOCU__COMMENT</v>
+                                      <v> This variable holds the current number of columns in the variable "Column"</v>
+                                    </d>
+                                    <v n="ConvDone">true</v>
+                                  </o>
+                                  <v n="TypeNodeId" t="Int16">9</v>
+                                  <v n="TypeNodeIdLong">1217457711L</v>
+                                  <v n="LibraryId">"visuelemswincontrols, 3.5.13.20 (system)"</v>
+                                  <n n="DisplayTextId" />
+                                  <n n="DescriptionTextID" />
+                                  <v n="DescriptionUseParent">false</v>
+                                </o>
+                                <n n="DynamicArrayNodeFastAccess" />
+                                <n n="ChildTemplate" />
+                                <l n="TypeNodeChildren" t="ArrayList" />
+                                <o n="TypeNodeType" t="TypeNodeType">
+                                  <v n="TypeClass" t="TypeClass">Userdef</v>
+                                  <v n="QualifiedName">"VisuFbTableColumnSimpleComboBoxArray"</v>
+                                  <v n="Name">"VisuFbTableColumnSimpleComboBoxArray"</v>
+                                </o>
+                                <v n="TypeNodeName">"Column"</v>
+                                <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                                  <v n="AttrFlags">0UL</v>
+                                  <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                    <v>DisplayTextId</v>
+                                    <v>TL_ElementProperties.Column</v>
+                                    <v>DescriptionUseFromParent</v>
+                                    <v></v>
+                                    <v>DefaultArraySize</v>
+                                    <v>100</v>
+                                    <v>''DOCU__COMMENT</v>
+                                    <v> Points to an array, that containts the configuration of each column</v>
+                                  </d>
+                                  <v n="ConvDone">true</v>
+                                </o>
+                                <v n="TypeNodeId" t="Int16">8</v>
+                                <v n="TypeNodeIdLong">2702530833L</v>
+                                <v n="LibraryId">"visuelemswincontrols, 3.5.13.20 (system)"</v>
+                                <v n="DisplayTextId">"TL_ElementProperties.Column"</v>
+                                <n n="DescriptionTextID" />
+                                <v n="DescriptionUseParent">true</v>
+                              </o>
+                              <o t="BasicTypeNode">
+                                <v n="Flags">0L</v>
+                                <v n="BasicTypeNodeValue" t="Int16">1</v>
+                                <v n="BasicTypeNodeAcceptsExpression">false</v>
+                                <n n="BasicTypeNodeFastAccess" />
+                                <a n="BasicTypeNodeEnumValues" et="String" />
+                                <n n="EnumValueDisplayTextIds" />
+                                <n n="EnumValueVisibilityAttributeValues" />
+                                <n n="EnumValueLibraryId" />
+                                <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                                <l n="TypeNodeChildren" t="ArrayList" />
+                                <o n="TypeNodeType" t="TypeNodeType">
+                                  <v n="TypeClass" t="TypeClass">Int</v>
+                                  <v n="QualifiedName">"INT"</v>
+                                  <v n="Name">"INT"</v>
+                                </o>
+                                <v n="TypeNodeName">"iColumnCount"</v>
+                                <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                                  <v n="AttrFlags">1UL</v>
+                                  <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                    <v>Visible</v>
+                                    <v>False</v>
+                                    <v>''DOCU__COMMENT</v>
+                                    <v> This variable holds the current number of columns in the variable "Column"</v>
+                                  </d>
+                                  <v n="ConvDone">true</v>
+                                </o>
+                                <v n="TypeNodeId" t="Int16">9</v>
+                                <v n="TypeNodeIdLong">1217457711L</v>
+                                <v n="LibraryId">"visuelemswincontrols, 3.5.13.20 (system)"</v>
+                                <n n="DisplayTextId" />
+                                <n n="DescriptionTextID" />
+                                <v n="DescriptionUseParent">false</v>
+                              </o>
+                            </l>
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Userdef</v>
+                              <v n="QualifiedName">"VisuStructColumnComboBox"</v>
+                              <v n="Name">"VisuStructColumnComboBox"</v>
+                            </o>
+                            <v n="TypeNodeName">"Columns"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">344064UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                <v>Category</v>
+                                <v>Standard|Columns</v>
+                                <v>DescriptionTextId</v>
+                                <v>TL_ElementProperties.Desc_Columns</v>
+                                <v>''DOCU__COMMENT</v>
+                                <v> This structure contains the definition of the comboboxarray columns.</v>
+                                <v>SortFlag</v>
+                                <v>310</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> the node for this element in the property view should have no value, i.e. ''</v>
+                                <v>conditionalshow</v>
+                                <v>visu_coredev</v>
+                                <v>TableColumns</v>
+                                <v></v>
+                                <v>Editable</v>
+                                <v>False</v>
+                                <v>DisplayValue</v>
+                                <v></v>
+                                <v>PreventBlobInitRec</v>
+                                <v>VisuStructRectangle</v>
+                                <v>DynamicArray</v>
+                                <v></v>
+                                <v>DisplayTextId</v>
+                                <v>TL_ElementProperties.Columns</v>
+                                <v>Storable</v>
+                                <v>True</v>
+                              </d>
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">7</v>
+                            <v n="TypeNodeIdLong">1668544811L</v>
+                            <v n="LibraryId">"visuelemswincontrols, 3.5.13.20 (system)"</v>
+                            <v n="DisplayTextId">"TL_ElementProperties.Columns"</v>
+                            <v n="DescriptionTextID">"TL_ElementProperties.Desc_Columns"</v>
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </o>
+                        <o>
+                          <v n="Id">3866084034L</v>
+                          <v n="Value">true</v>
+                        </o>
+                        <o>
+                          <v n="Id">538318008L</v>
+                          <v n="Value">true</v>
+                        </o>
+                        <o>
+                          <v n="Id">1055805281L</v>
+                          <v n="Value">40</v>
+                        </o>
+                        <o>
+                          <v n="Id">1255297995L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">4010712728L</v>
+                          <v n="Value">true</v>
+                        </o>
+                        <o>
+                          <v n="Id">2703123772L</v>
+                          <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                            <o>
+                              <v n="FontStyle">0</v>
+                              <v n="AdditionalFontStyle" t="UInt16">0</v>
+                              <v n="ExplicitColor">-16777216</v>
+                              <v n="CanonicalName">"Font-Standard"</v>
+                              <v n="FontName">"Arial"</v>
+                              <v n="FontSize">12</v>
+                              <v n="ScriptIdentification">0</v>
+                              <v n="DoubleFontSize" t="Double">0</v>
+                              <n n="NamedColor" />
+                            </o>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">493260384L</v>
+                          <v n="Value">4294967295U</v>
+                        </o>
+                        <o>
+                          <v n="Id">135947015L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">2678395525L</v>
+                          <v n="Value">1U</v>
+                        </o>
+                        <o>
+                          <v n="Id">2340015797L</v>
+                          <v n="Value">"HCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2565699834L</v>
+                          <v n="Value">"VCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">390574330L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">571893170L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">397264524L</v>
+                          <v n="Value">"GVL.taskChooseId"</v>
+                        </o>
+                        <o>
+                          <v n="Id">72808681L</v>
+                          <v n="Value">"gvl.taskChooseList"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1636817830L</v>
+                          <v n="Value">"%s"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3854506369L</v>
+                          <v n="Value">"gvl.taskChooseList[INDEX]"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2232123230L</v>
+                          <v n="Value">"gvl.taskChooseList[INDEX]"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2685023577L</v>
+                          <v n="Value">"gvl.taskChooseList[INDEX]"</v>
+                        </o>
+                        <o>
+                          <v n="Id">4036189354L</v>
+                          <v n="Value" t="Int16">60</v>
+                        </o>
+                        <o>
+                          <v n="Id">3669839856L</v>
+                          <v n="Value">"HCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2318311169L</v>
+                          <v n="Value">2</v>
+                        </o>
+                        <o>
+                          <v n="Id">3146216842L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">1636615684L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">1882453005L</v>
+                          <v n="Value">true</v>
+                        </o>
+                        <o>
+                          <v n="Id">3234392039L</v>
+                          <o n="Value" t="DataVariableInformation">
+                            <v n="DataArrayType">"ARRAY [0..1] OF WSTRING(20)"</v>
+                            <v n="ColumnCount">1</v>
+                            <v n="RowCount">2</v>
+                            <v n="FirstColumnIndex">0</v>
+                            <v n="FirstRowIndex">0</v>
+                            <a n="ColumnTypes" cet="TypeClass">
+                              <v>WString</v>
+                            </a>
+                            <a n="ColumnNames" cet="String">
+                              <v>gvl.taskChooseList[INDEX]</v>
+                            </a>
+                            <v n="BaseType">true</v>
+                            <n n="Bounds" />
+                            <v n="ArrayType" t="EArrayType">OneDimensional</v>
+                          </o>
+                        </o>
+                        <o>
+                          <v n="Id">175837068L</v>
+                          <v n="Value">false</v>
+                        </o>
+                        <o>
+                          <v n="Id">2597686782L</v>
+                          <v n="Value">false</v>
+                        </o>
+                      </l>
+                    </o>
+                    <v n="VisualElementName">"ComboBoxTable"</v>
+                    <v n="VisualElementTypeName">"VisuFbComboBoxArray"</v>
+                    <v n="VisualElementIsRectangle">true</v>
+                    <v n="VisualElementIdentifier">"GenElemInst_934"</v>
+                    <n n="VisualElementOfflinePaintCommands" />
+                    <n n="VisualElementFrameInformation" />
+                    <d n="VisualElementInputActions" t="Hashtable" />
+                    <v n="VisualElementIdentification">{b797afb5-0c21-41fa-85ed-b38beee10753}</v>
+                    <v n="VisualElementOwningObjectGuid">{3f107c53-f61f-43ad-9977-e0c439fb3f04}</v>
+                    <a n="LMGuids" cet="Guid">
+                      <v>2680061d-aa99-47c4-9059-8e2fd06bdcd5</v>
+                      <v>ccaa6295-81c3-4f9f-90b6-c03fe4550ff7</v>
+                    </a>
+                    <d n="SubElements" t="Hashtable" />
+                    <v n="VisualElementId">0</v>
+                    <l n="UserManagementAccessRights" t="ArrayList" />
+                  </o>
                 </l>
                 <n n="VisualElementDescription" />
                 <o n="VisualElemMemberList" t="VisualElemMemberList">
@@ -83519,10 +83914,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d5c60e1a-6486-465c-9675-2797e27d086a</v>
-                <v>FB_Exit</v>
-                <v>a3ad0f9a-1ce8-4057-8a9e-617cc2afd087</v>
                 <v>FB_Reinit</v>
                 <v>97b7d3ca-3c1e-495f-b670-e50a1b1b2163</v>
+                <v>FB_Exit</v>
+                <v>a3ad0f9a-1ce8-4057-8a9e-617cc2afd087</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{f65b4c99-f4bb-4bdd-bce5-2055bdafa004}</v>
@@ -83566,7 +83961,7 @@
             </o>
             <v n="DialogDut">{90a31fc8-10dc-407c-a9f9-8404a7d0946b}</v>
           </o>
-          <v n="LastUsedIdForIdentifier">933</v>
+          <v n="LastUsedIdForIdentifier">934</v>
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>

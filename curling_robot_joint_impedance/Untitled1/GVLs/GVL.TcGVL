@@ -369,6 +369,8 @@ VAR_GLOBAL
 	setRcRefAngButton:BOOL:=FALSE;
 	
 	//curling
+	taskChooseId:UINT:=0;
+	taskChooseList:array [0..1] of wstring(20):=["击打","进营"];
 	adjust_angle_degree:LREAL:=0;//degree
 	target_vel:LREAL:=2;//m/s
 	stone_rot_vel:LREAL:=-60;//rpm
