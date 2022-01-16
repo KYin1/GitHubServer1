@@ -5116,7 +5116,6 @@
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500820000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^Untitled1^Untitled1 Instance">
 			<OwnerB Name="TIID^Device 3 (EtherCAT)^Box 19 (TorqueGateway_IMU)">
 				<Link VarA="PlcTask Inputs^GVL.motorDrive[10].trqSensor.trqsensorValue" VarB="Axis1 process data mapping^ActTrq"/>

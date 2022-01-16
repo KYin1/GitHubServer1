@@ -6293,8 +6293,8 @@
                         <o>
                           <v n="InputBoxVariable">""</v>
                           <v n="InputType">"Default"</v>
-                          <v n="InputBoxMin">""</v>
-                          <v n="InputBoxMax">""</v>
+                          <v n="InputBoxMin">"-0.3"</v>
+                          <v n="InputBoxMax">"0.3"</v>
                           <v n="InputBoxDialogTitle">""</v>
                           <v n="Password">false</v>
                           <v n="UseTextOutputVariable">true</v>
@@ -30202,8 +30202,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-6"</v>
+                      <v n="InputBoxMax">"6"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -30382,8 +30382,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"0.5"</v>
+                      <v n="InputBoxMax">"2.5"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -30562,8 +30562,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-80"</v>
+                      <v n="InputBoxMax">"80"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -32375,8 +32375,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"0.5"</v>
+                      <v n="InputBoxMax">"2.7"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -33928,8 +33928,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-6"</v>
+                      <v n="InputBoxMax">"6"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -34108,8 +34108,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-0.1"</v>
+                      <v n="InputBoxMax">"0.1"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -34288,8 +34288,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-0.05"</v>
+                      <v n="InputBoxMax">"0.05"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -35121,8 +35121,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"0.1"</v>
+                      <v n="InputBoxMax">"5"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -35301,8 +35301,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"0.1"</v>
+                      <v n="InputBoxMax">"10"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -36232,8 +36232,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-60"</v>
+                      <v n="InputBoxMax">"0"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -65622,8 +65622,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-0.35"</v>
+                      <v n="InputBoxMax">"0.35"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -65802,8 +65802,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-0.2"</v>
+                      <v n="InputBoxMax">"0.2"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -65982,8 +65982,8 @@
                     <o>
                       <v n="InputBoxVariable">""</v>
                       <v n="InputType">"Default"</v>
-                      <v n="InputBoxMin">""</v>
-                      <v n="InputBoxMax">""</v>
+                      <v n="InputBoxMin">"-0.2"</v>
+                      <v n="InputBoxMax">"0.2"</v>
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
@@ -83914,10 +83914,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d5c60e1a-6486-465c-9675-2797e27d086a</v>
-                <v>FB_Reinit</v>
-                <v>97b7d3ca-3c1e-495f-b670-e50a1b1b2163</v>
                 <v>FB_Exit</v>
                 <v>a3ad0f9a-1ce8-4057-8a9e-617cc2afd087</v>
+                <v>FB_Reinit</v>
+                <v>97b7d3ca-3c1e-495f-b670-e50a1b1b2163</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{f65b4c99-f4bb-4bdd-bce5-2055bdafa004}</v>
