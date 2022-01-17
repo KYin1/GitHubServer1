@@ -326,7 +326,7 @@ VAR
 	SP_SearchDistance:LREAL:=0.05;
 	
 	//ArmControl
-	AC_time:LREAL:=3;
+	AC_time:LREAL:=1.5;
 	AC_AngleDeg:LREAL:=-15;
 	AC_AngleRad:LREAL:=-15*pi/180;
 	AC_Velocity:LREAL;
@@ -335,7 +335,7 @@ VAR
 	AC_wait:BOOL:=FALSE;
 	AC_EnterExtendCount:UDINT;
 	AC_EnterRetractCount:UDINT;
-	AC_waitTime:LREAL:=2;
+	AC_waitTime:LREAL:=1;
 	AC_visual_start:bool:=false;
 	
 
