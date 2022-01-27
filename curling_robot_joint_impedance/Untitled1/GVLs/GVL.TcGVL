@@ -382,10 +382,14 @@ VAR_GLOBAL
 															0,0,0];//[0,-0.01,0,0,0.01,0]																												
 	curlingPushModel        :  UINT   := 0;
 	curlingPushModelList :  ARRAY[0..1] OF WSTRING(20) := ["Push", "noPush"];
-	PushFinishDurationTimeIn:LREAL:=3;
+	PushFinishDurationTimeIn:LREAL:=1;
 	slideTimeIn:LREAL:=0.3;
 	ArmRetractControl:BOOL:=FALSE;
 	AC_AngleDegIn:LREAL:=-40;
+	
+	gripBallThighTargetAngle:LREAL:=167;
+	gripBallShankTargetAngle:LREAL:=171;
+	
 	//init value
 	adjust_angle_degree_init:LREAL:=0;//degree
 	target_vel_init:LREAL:=2;//m/s
@@ -420,7 +424,7 @@ VAR_GLOBAL
 	//liftbody
 	RestButton:BOOL:=FALSE;
 	WorkButton:BOOL:=FALSE;
-	ReduceDistance:LREAL:=-0.15;
+	ReduceDistance:LREAL:=-0.08;//-0.15
 	IsRest:BOOL:=FALSE;
 	IsRcCurling:BOOL:=FALSE;
 	IsPreLiftBody:BOOL:=FALSE;

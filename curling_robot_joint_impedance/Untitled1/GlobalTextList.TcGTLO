@@ -1261,6 +1261,16 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"1860"</v>
+              <v n="TextDefault">"大腿抱角"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2067"</v>
+              <v n="TextDefault">"小腿抱角"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"2372"</v>
               <v n="TextDefault">"工作"</v>
               <l n="LanguageTexts" t="ArrayList" />

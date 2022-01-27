@@ -375,6 +375,8 @@ VAR
 	SetColide:BOOL:=FALSE;
 	StoneRotSubState:ARRAY [0..1] OF BOOL:=[FALSE,FALSE];
 	StoneRotTime:LREAL:=2;
+	StoneRot_FJntTarget:ARRAY[0..1,0..2] OF LREAL:=[-90*pi/180,167*pi/180,(171)*pi/180,
+                                                     90*pi/180,167*pi/180,(171)*pi/180];	//164 lose,166T 168S passive wheels colide;	
 	
 	//LiftMleg
 	LiftMleg_MJntStart:ARRAY[0..1] OF vec3;
@@ -652,13 +654,13 @@ IF gvl.taskChooseId=0 THEN //击打
 	gvl.PushVelocityIn_init:=2.3;
 	gvl.stone_rot_vel_init:=-60;
 	gvl.slideTimeIn_init:=0.3;
-	gvl.PushFinishDurationTimeIn_init:=3;
+	gvl.PushFinishDurationTimeIn_init:=1;
 ELSE //进营
 	gvl.target_vel_init:=2;
 	gvl.PushVelocityIn_init:=1.15;
 	gvl.stone_rot_vel_init:=30;	
 	gvl.slideTimeIn_init:=0.3;
-	gvl.PushFinishDurationTimeIn_init:=3;
+	gvl.PushFinishDurationTimeIn_init:=1;
 END_IF
 
 gvl.adjust_angle_degree:=gvl.adjust_angle_degree_init;
@@ -3691,8 +3693,7 @@ VAR
 													 
 	(*StoneRot_FJntTarget:ARRAY[0..1,0..2] OF LREAL:=[-90*pi/180,165*pi/180,(-190+360)*pi/180,
                                                      90*pi/180,165*pi/180,(-190+360)*pi/180];	//164 lose,165T 170S lose;*)
-	StoneRot_FJntTarget:ARRAY[0..1,0..2] OF LREAL:=[-90*pi/180,167*pi/180,(171)*pi/180,
-                                                     90*pi/180,167*pi/180,(171)*pi/180];	//164 lose,166T 168S passive wheels colide;												 
+											 
 	tr: LREAL;
 	i: INT;
 	Rb_target1: Mat3;	
@@ -3715,7 +3716,14 @@ END_VAR]]></Declaration>
 	
 
 //**********************************end************************************************	
-
+//***********************************夹取新冰壶位置调整********* start*******************
+IF gait_cycle-EnterStoneRotCount=1 THEN
+	StoneRot_FJntTarget[0,1]:=gvl.gripBallThighTargetAngle*pi/180;//right leg thigh
+	StoneRot_FJntTarget[1,1]:=gvl.gripBallThighTargetAngle*pi/180;//left leg thigh
+	StoneRot_FJntTarget[0,2]:=gvl.gripBallShankTargetAngle*pi/180;//right leg shank
+	StoneRot_FJntTarget[1,2]:=gvl.gripBallShankTargetAngle*pi/180;//left leg shank	
+END_IF
+//************************************end************************************************
 (*FOR i:=0 TO 1 DO
 	IF StoneRotSubState[i]=FALSE AND isStone(Mapping23[i]) THEN
 		StoneRotSubState[i]:=TRUE;
@@ -4979,7 +4987,12 @@ END_IF
       <LineId Id="188" Count="0" />
       <LineId Id="166" Count="0" />
       <LineId Id="169" Count="0" />
-      <LineId Id="99" Count="1" />
+      <LineId Id="99" Count="0" />
+      <LineId Id="301" Count="3" />
+      <LineId Id="324" Count="0" />
+      <LineId Id="323" Count="0" />
+      <LineId Id="305" Count="0" />
+      <LineId Id="100" Count="0" />
       <LineId Id="17" Count="4" />
       <LineId Id="5" Count="0" />
       <LineId Id="125" Count="5" />

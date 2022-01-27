@@ -1769,8 +1769,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x00ffffff">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -1793,7 +1793,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -1816,7 +1816,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -1842,7 +1842,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -1882,7 +1882,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -1908,7 +1908,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -1925,8 +1925,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000001">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -1949,7 +1949,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -1972,7 +1972,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -1998,7 +1998,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2038,7 +2038,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -2064,7 +2064,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2081,8 +2081,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000002">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -2105,7 +2105,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -2128,7 +2128,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -2154,7 +2154,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2194,7 +2194,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -2220,7 +2220,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2237,8 +2237,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000003">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -2261,7 +2261,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -2284,7 +2284,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -2310,7 +2310,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2350,7 +2350,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -2376,7 +2376,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2393,8 +2393,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000004">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -2417,7 +2417,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -2440,7 +2440,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -2466,7 +2466,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2506,7 +2506,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -2532,7 +2532,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2549,8 +2549,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000005">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -2573,7 +2573,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -2596,7 +2596,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -2622,7 +2622,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2662,7 +2662,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -2688,7 +2688,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2705,8 +2705,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000006">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -2729,7 +2729,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -2752,7 +2752,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -2778,7 +2778,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2818,7 +2818,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -2844,7 +2844,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2861,8 +2861,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000007">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -2885,7 +2885,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -2908,7 +2908,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -2934,7 +2934,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -2974,7 +2974,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3000,7 +3000,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3017,8 +3017,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000008">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3041,7 +3041,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -3064,7 +3064,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -3090,7 +3090,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3130,7 +3130,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3156,7 +3156,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3173,8 +3173,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000009">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3197,7 +3197,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -3220,7 +3220,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -3246,7 +3246,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3286,7 +3286,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3312,7 +3312,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3329,8 +3329,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x0100000a">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3353,7 +3353,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -3376,7 +3376,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -3402,7 +3402,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3442,7 +3442,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3468,7 +3468,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3485,8 +3485,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x0100000b">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3509,7 +3509,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -3532,7 +3532,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -3558,7 +3558,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3598,7 +3598,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3624,7 +3624,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3641,8 +3641,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x0100000c">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3665,7 +3665,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -3688,7 +3688,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -3714,7 +3714,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3754,7 +3754,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3780,7 +3780,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3797,8 +3797,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x0100000d">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3821,7 +3821,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -3844,7 +3844,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -3870,7 +3870,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3910,7 +3910,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -3936,7 +3936,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -3953,8 +3953,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x0100000e">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -3977,7 +3977,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -4000,7 +4000,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -4026,7 +4026,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4066,7 +4066,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -4092,7 +4092,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4109,8 +4109,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x0100000f">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -4133,7 +4133,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -4156,7 +4156,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -4182,7 +4182,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4222,7 +4222,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -4248,7 +4248,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4265,8 +4265,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000010">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -4289,7 +4289,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -4312,7 +4312,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -4338,7 +4338,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4378,7 +4378,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -4404,7 +4404,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4421,8 +4421,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0e08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="15" FoeType="1" VendorId="#x000022d2" ProductCode="#x00000201" RevisionNo="#x0a000002" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="6000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="SOMANET CiA402 Drive" Desc="CiA402 Motor Control Device" PortABoxInfo="#x01000011">
 						<SyncMan>001000042600010001000000000000000004001026010000</SyncMan>
 						<SyncMan>001400042200010002000000000000000004001422010000</SyncMan>
-						<SyncMan>00181f002400010003000000000000000800001824010000</SyncMan>
-						<SyncMan>001c37002000010004000000000000000800001c20010000</SyncMan>
+						<SyncMan>001813002400010003000000000000000800001824010000</SyncMan>
+						<SyncMan>001c0d002000010004000000000000000800001c20010000</SyncMan>
 						<Fmmu>0000000000000000001800020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001c00010100000002000000000000000000000000000000</Fmmu>
 						<BootStrapData>0010000400140004</BootStrapData>
@@ -4445,7 +4445,7 @@
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 2" Index="#x1a01" Flags="#x0000">
 							<Entry Name="Secondary position value" Index="#x230a">
 								<Type>DINT</Type>
 							</Entry>
@@ -4468,7 +4468,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 3" Index="#x1a02" Flags="#x0000">
 							<Entry Name="Digital input 1" Index="#x2501">
 								<Type>BIT</Type>
 							</Entry>
@@ -4494,7 +4494,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000" SyncMan="3">
+						<Pdo Name="TxPDO Mapping 4" Index="#x1a03" Flags="#x0000">
 							<Entry Name="User MISO" Index="#x2704">
 								<Type>UDINT</Type>
 							</Entry>
@@ -4534,7 +4534,7 @@
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
 							<Entry Name="Digital output 1" Index="#x2601">
 								<Type>BIT</Type>
 							</Entry>
@@ -4560,7 +4560,7 @@
 								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+						<Pdo Name="RxPDO Mapping 3" Index="#x1602" InOut="1" Flags="#x0000">
 							<Entry Name="User MOSI" Index="#x2703">
 								<Type>UDINT</Type>
 							</Entry>

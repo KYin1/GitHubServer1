@@ -686,17 +686,31 @@ VAR_INPUT
 END_VAR
 VAR
 	fceLimit : LREAL;
+	isSingular : BOOL;
 END_VAR
 ]]></Declaration>
       <Implementation>
-        <ST><![CDATA[IF legID = 0 OR legID = 5 THEN
-	fceLimit := 80;
+        <ST><![CDATA[isSingular := FALSE;
+IF legID = 0 OR legID = 5 THEN
+	IF legID = 0 THEN
+		fceLimit := 30;
+	ELSE
+		fceLimit := 20;
+	END_IF
+	IF ABS(gvl.jntActualPos[legID,0]-gvl.jntActualPos[legID,1])<0.1 THEN//5.7 deg
+		isSingular := TRUE;
+	END_IF
 ELSE
-	fceLimit := 60;
+	fceLimit := 30;
+	IF ABS(gvl.jntActualPos[legID,0])<0.1 THEN//5.7 deg
+		isSingular := TRUE;
+	END_IF
 END_IF
 
 //IF count*deltaT > allContactTime+period THEN//离线测试
-IF count*deltaT > allContactTime+period/4 AND  gvl.tipActualFce[legID,1] > fceLimit THEN
+IF count*deltaT > allContactTime+period/4 AND 
+   (gvl.tipActualFce[legID,1] > fceLimit OR //isSingular = TRUE OR
+    gvl.tipActualPos[legID,1] < tipPosInit2H[legID].data[1] - 0.1) THEN
 	isContact := TRUE;
 ELSE
 	isContact := FALSE;
@@ -726,10 +740,10 @@ END_VAR
       <Implementation>
         <ST><![CDATA[//generate 5 waypoints
 tp[0] := allContactTime;
-tp[1] := tp[0] + period / 6;
-tp[2] := tp[1] + period / 6;
-tp[3] := tp[2] + period / 3;
-tp[4] := tp[3] + period / 3;
+tp[1] := tp[0] + period / 4;
+tp[2] := tp[1] + period / 4;
+tp[3] := tp[2] + period / 4;
+tp[4] := tp[3] + period / 4;
 
 xp[0] := tipPosInit[legID].data[0];
 yp[0] := tipPosInit[legID].data[1];
@@ -808,6 +822,8 @@ bodyRPYTrgt.data[2] := bodyRPYInit.data[2] + stepYaw;//yaw
 CalcSlope(yaw := bodyRPYTrgt.data[2],
 		  roll => bodyRPYTrgt.data[0], pitch => bodyRPYTrgt.data[1],
 		  deltaH => bodyDist2T.data[2],tipDelta => tipBias);
+bodyRPYTrgt.data[0]:=0;
+bodyRPYTrgt.data[1]:=0;
 //bodyRPYTrgt.data[0] := gvl.rpy_model[0] + bodyRPYTrgt.data[0] - bodyRPYInit.data[0];//引入实际角度修正
 //bodyRPYTrgt.data[1] := gvl.rpy_model[1] + bodyRPYTrgt.data[1] - bodyRPYInit.data[1];//引入实际角度修正
 objRotMtx(yaw:=bodyRPYTrgt.data[2],pitch:=bodyRPYTrgt.data[1],roll:=bodyRPYTrgt.data[0],
@@ -1055,7 +1071,8 @@ END_IF]]></ST>
       <LineId Id="84" Count="0" />
       <LineId Id="86" Count="0" />
       <LineId Id="85" Count="0" />
-      <LineId Id="430" Count="1" />
+      <LineId Id="430" Count="0" />
+      <LineId Id="463" Count="0" />
       <LineId Id="249" Count="0" />
       <LineId Id="248" Count="0" />
       <LineId Id="250" Count="2" />
@@ -1113,12 +1130,21 @@ END_IF]]></ST>
       <LineId Id="197" Count="0" />
     </LineIds>
     <LineIds Name="WalkSlopeGait.isContact">
-      <LineId Id="37" Count="1" />
+      <LineId Id="78" Count="0" />
+      <LineId Id="37" Count="0" />
+      <LineId Id="88" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="89" Count="2" />
+      <LineId Id="63" Count="2" />
       <LineId Id="40" Count="1" />
+      <LineId Id="67" Count="1" />
+      <LineId Id="66" Count="0" />
       <LineId Id="39" Count="0" />
       <LineId Id="51" Count="0" />
       <LineId Id="42" Count="0" />
-      <LineId Id="7" Count="1" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="60" Count="1" />
+      <LineId Id="8" Count="0" />
       <LineId Id="10" Count="1" />
       <LineId Id="9" Count="0" />
       <LineId Id="5" Count="0" />
@@ -1169,7 +1195,9 @@ END_IF]]></ST>
       <LineId Id="60" Count="0" />
     </LineIds>
     <LineIds Name="WalkSlopeGait.UpdateInitAndTrgt">
-      <LineId Id="6" Count="25" />
+      <LineId Id="6" Count="11" />
+      <LineId Id="67" Count="1" />
+      <LineId Id="18" Count="13" />
       <LineId Id="33" Count="2" />
       <LineId Id="45" Count="0" />
       <LineId Id="36" Count="0" />

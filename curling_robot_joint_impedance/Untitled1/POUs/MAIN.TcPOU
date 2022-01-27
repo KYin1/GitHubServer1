@@ -258,6 +258,7 @@ IF gvl.setRcRefAngButton=TRUE THEN
 END_IF
 
 IF gvl.RestButton=TRUE AND gvl.WorkButton=FALSE THEN
+	gvl.ReduceDistance:=-0.08;
 	gvl.IsRest:=TRUE;
 	gvl.IsWork:=FALSE;
 	gvl.LiftBodyStartFlag:=TRUE;
@@ -266,6 +267,7 @@ IF gvl.RestButton=TRUE AND gvl.WorkButton=FALSE THEN
 	gvl.RestButton:=FALSE;
 END_IF
 IF gvl.RestButton=FALSE AND gvl.WorkButton=TRUE THEN
+	gvl.ReduceDistance:=0.08;
 	gvl.IsWork:=TRUE;
 	gvl.IsRest:=FALSE;
 	gvl.LiftBodyStartFlag:=TRUE;
@@ -335,10 +337,14 @@ END_IF
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
-      <LineId Id="410" Count="248" />
+      <LineId Id="410" Count="246" />
+      <LineId Id="884" Count="0" />
+      <LineId Id="657" Count="1" />
       <LineId Id="774" Count="2" />
       <LineId Id="773" Count="0" />
-      <LineId Id="664" Count="9" />
+      <LineId Id="664" Count="1" />
+      <LineId Id="885" Count="0" />
+      <LineId Id="666" Count="7" />
       <LineId Id="852" Count="19" />
       <LineId Id="873" Count="2" />
       <LineId Id="725" Count="16" />
